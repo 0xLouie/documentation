@@ -88,14 +88,9 @@
               "resources/market-parameters",
               "resources/access-controls"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Terms",
-        "groups": [
+          },
           {
-            "group": "Legal",
+            "group": "Terms",
             "icon": "scale-balanced",
             "pages": [
               "terms/risk-disclosure",
