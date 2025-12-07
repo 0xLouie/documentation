@@ -8,97 +8,101 @@
     "dark": "#5B21B6"
   },
   "favicon": "/favicon.svg",
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "index",
-        "getting-started/create-account",
-        "getting-started/connect-friends"
-      ]
-    },
-    {
-      "group": "About Versus",
-      "pages": [
-        "about/why-prediction-markets",
-        "about/philosophy",
-        "about/market-opportunity"
-      ]
-    },
-    {
-      "group": "Using Versus",
-      "pages": [
-        "using/portfolio-dashboard",
-        "using/leaderboard",
-        "using/live-feed",
-        "using/friends-network",
-        "using/prediction-markets"
-      ]
-    },
-    {
-      "group": "Terminal Features",
-      "pages": [
-        "terminal/market-cards",
-        "terminal/entering-prediction",
-        "terminal/active-positions",
-        "terminal/vs-friends-challenges"
-      ]
-    },
-    {
-      "group": "Key Concepts",
-      "pages": [
-        "concepts/pnl-calculation",
-        "concepts/odds-movement",
-        "concepts/social-betting-layer",
-        "concepts/ranking-algorithm"
-      ]
-    },
-    {
-      "group": "Applications",
-      "pages": [
-        "applications/competitive-social-trading",
-        "applications/prediction-entertainment",
-        "applications/community-leagues"
-      ]
-    },
-    {
-      "group": "Security & Trust",
-      "pages": [
-        "security/identity-profiles",
-        "security/fair-play",
-        "security/data-integrity"
-      ]
-    },
-    {
-      "group": "Resources",
-      "pages": [
-        "resources/glossary",
-        "resources/market-parameters",
-        "resources/access-controls"
-      ]
-    },
-    {
-      "group": "Terms",
-      "pages": [
-        "terms/risk-disclosure",
-        "terms/terms-conditions",
-        "terms/privacy-policy",
-        "terms/cookie-policy"
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "getting-started/create-account",
+          "getting-started/connect-friends"
+        ]
+      },
+      {
+        "group": "About Versus",
+        "pages": [
+          "about/why-prediction-markets",
+          "about/philosophy",
+          "about/market-opportunity"
+        ]
+      },
+      {
+        "group": "Using Versus",
+        "pages": [
+          "using/portfolio-dashboard",
+          "using/leaderboard",
+          "using/live-feed",
+          "using/friends-network",
+          "using/prediction-markets"
+        ]
+      },
+      {
+        "group": "Terminal Features",
+        "pages": [
+          "terminal/market-cards",
+          "terminal/entering-prediction",
+          "terminal/active-positions",
+          "terminal/vs-friends-challenges"
+        ]
+      },
+      {
+        "group": "Key Concepts",
+        "pages": [
+          "concepts/pnl-calculation",
+          "concepts/odds-movement",
+          "concepts/social-betting-layer",
+          "concepts/ranking-algorithm"
+        ]
+      },
+      {
+        "group": "Applications",
+        "pages": [
+          "applications/competitive-social-trading",
+          "applications/prediction-entertainment",
+          "applications/community-leagues"
+        ]
+      },
+      {
+        "group": "Security & Trust",
+        "pages": [
+          "security/identity-profiles",
+          "security/fair-play",
+          "security/data-integrity"
+        ]
+      },
+      {
+        "group": "Resources",
+        "pages": [
+          "resources/glossary",
+          "resources/market-parameters",
+          "resources/access-controls"
+        ]
+      },
+      {
+        "group": "Terms",
+        "pages": [
+          "terms/risk-disclosure",
+          "terms/terms-conditions",
+          "terms/privacy-policy",
+          "terms/cookie-policy"
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Community",
+          "href": "https://discord.gg/versus",
+          "icon": "discord"
+        },
+        {
+          "anchor": "Updates",
+          "href": "https://twitter.com/versus",
+          "icon": "x-twitter"
+        }
       ]
     }
-  ],
-  "anchors": [
-    {
-      "name": "Community",
-      "url": "https://discord.gg/versus",
-      "icon": "discord"
-    },
-    {
-      "name": "Updates",
-      "url": "https://twitter.com/versus",
-      "icon": "x-twitter"
-    }
-  ],
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
