@@ -1,36 +1,33 @@
 ---
-title: "Welcome to Versus"
-sidebarTitle: "Welcome to Versus"
-description: "Where predictions meet competition. The social prediction platform built for you and your friends."
+title: "Meet Versus"
+sidebarTitle: "Meet Versus"
+description: "Where predictions meet competition"
+mode: "wide"
 ---
 
-<Frame>
-  <img src="/images/hero-dark.png" alt="Versus Platform" className="hidden dark:block rounded-xl" />
-  <img src="/images/hero-light.png" alt="Versus Platform" className="dark:hidden rounded-xl" />
-</Frame>
-
-## 
-
-<div className="mt-8" />
-
-# Meet Versus
-
-**Predict. Compete. Win.**
-
-Versus transforms prediction markets into a thrilling social experience. Challenge your friends, climb the leaderboards, and prove your forecasting prowess.
+<div className="relative -mx-6 -mt-8 mb-12 overflow-hidden rounded-xl bg-gradient-to-br from-violet-950 via-purple-900 to-indigo-950 px-8 py-16 text-center">
+  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+  <div className="relative z-10">
+    <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
+      <span className="text-5xl">⚔️</span>
+    </div>
+    <h1 className="mb-4 text-5xl font-bold text-white">Meet Versus</h1>
+    <p className="text-xl text-purple-200">Predict. Compete. Win.</p>
+  </div>
+</div>
 
 <CardGroup cols={2}>
-  <Card title="What is Versus?" icon="bullseye-arrow" href="/about/why-prediction-markets">
-    Discover why prediction markets are the ultimate test of knowledge and intuition
+  <Card title="What is Versus?" icon="mountain" href="/about/why-prediction-markets">
+    The social prediction platform where you compete against friends on real-world events
   </Card>
-  <Card title="The Versus Philosophy" icon="compass" href="/about/philosophy">
-    Learn how we're reimagining predictions as social entertainment
+  <Card title="Platform Features" icon="bolt" href="/using/prediction-markets">
+    Explore the Terminal, challenges, leaderboards, and everything Versus offers
   </Card>
-  <Card title="Get Started" icon="rocket" href="/getting-started/create-account">
-    Create your account and start competing in minutes
+  <Card title="Our Mission" icon="seedling" href="/about/philosophy">
+    Learn why we built Versus and our vision for social prediction entertainment
   </Card>
-  <Card title="Terminal Features" icon="terminal" href="/terminal/market-cards">
-    Explore the powerful tools at your fingertips
+  <Card title="Start Competing" icon="bullseye-arrow" href="/getting-started/create-account">
+    Create your account and make your first prediction in minutes
   </Card>
 </CardGroup>
 
@@ -38,7 +35,7 @@ Versus transforms prediction markets into a thrilling social experience. Challen
 
 ## Why Versus?
 
-<Columns cols={3}>
+<CardGroup cols={3}>
   <Card title="Social First" icon="users">
     Challenge friends directly. See their positions. Compete head-to-head on every market.
   </Card>
@@ -48,7 +45,7 @@ Versus transforms prediction markets into a thrilling social experience. Challen
   <Card title="Prove Your Edge" icon="trophy">
     Climb the ranks. Build your reputation. Become a prediction legend.
   </Card>
-</Columns>
+</CardGroup>
 
 ---
 
