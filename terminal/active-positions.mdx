@@ -1,0 +1,216 @@
+---
+title: "Active Positions"
+sidebarTitle: "Active Positions"
+description: "Monitor and manage your open predictions"
+icon: "chart-line"
+---
+
+# Active Positions
+
+Your active positions are predictions that haven't yet resolved. Track their status, monitor odds movement, and watch your unrealized PnL in real-time.
+
+---
+
+## Positions Overview
+
+<Frame caption="The Active Positions view shows all your open predictions">
+  <img src="/images/hero-dark.png" alt="Active Positions" className="hidden dark:block rounded-lg" />
+  <img src="/images/hero-light.png" alt="Active Positions" className="dark:hidden rounded-lg" />
+</Frame>
+
+---
+
+## Position Information
+
+Each active position displays:
+
+<Tabs>
+  <Tab title="Core Details">
+    | Field | Description |
+    |-------|-------------|
+    | **Market** | The event you predicted on |
+    | **Your Outcome** | Which side you chose |
+    | **Amount** | Tokens committed |
+    | **Entry Odds** | Price when you entered |
+    | **Current Odds** | Live market probability |
+    | **Unrealized PnL** | Potential profit/loss if resolved now |
+  </Tab>
+  <Tab title="Time Info">
+    | Field | Description |
+    |-------|-------------|
+    | **Entry Time** | When you entered the position |
+    | **Resolution Date** | When the market closes |
+    | **Time Remaining** | Countdown to resolution |
+    | **Status** | Open, Locked, or Resolving |
+  </Tab>
+  <Tab title="Market Context">
+    | Field | Description |
+    |-------|-------------|
+    | **Total Volume** | Market-wide betting volume |
+    | **Your % of Market** | How much of the market you represent |
+    | **Friend Positions** | How friends are positioned |
+    | **Odds History** | Chart of odds movement since entry |
+  </Tab>
+</Tabs>
+
+---
+
+## Position States
+
+<AccordionGroup>
+  <Accordion title="Open" icon="circle-play" defaultOpen>
+    **Market Still Trading**
+    
+    - Odds continue to move
+    - New participants can enter
+    - Your unrealized PnL fluctuates
+    - All position details visible
+    
+    <Info>
+      This is where most of your positions will be. Watch the odds and wait for resolution.
+    </Info>
+  </Accordion>
+  <Accordion title="Locked" icon="lock">
+    **Event In Progress**
+    
+    - No new predictions accepted
+    - Odds frozen at lock time
+    - Waiting for event outcome
+    - Position cannot be modified
+    
+    <Info>
+      Sports markets lock at game start. Political markets may lock on election day.
+    </Info>
+  </Accordion>
+  <Accordion title="Resolving" icon="hourglass-half">
+    **Outcome Being Determined**
+    
+    - Event completed
+    - Awaiting official result confirmation
+    - Usually resolves within hours
+    - Rare disputes may extend this period
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## PnL Indicators
+
+Your positions use color coding:
+
+| Color | Meaning |
+|-------|---------|
+| 🟢 **Green** | Currently profitable (odds moved in your favor) |
+| 🔴 **Red** | Currently at a loss (odds moved against you) |
+| ⚪ **White/Gray** | Neutral (odds near entry) |
+
+<Note>
+  Unrealized PnL is theoretical. Your actual return depends on the final outcome, not intermediate odds movements.
+</Note>
+
+---
+
+## Sorting & Filtering
+
+Organize your positions:
+
+<Columns cols={2}>
+  <Card title="By Resolution" icon="clock">
+    Soonest resolving first
+  </Card>
+  <Card title="By PnL" icon="coins">
+    Best or worst performers
+  </Card>
+  <Card title="By Amount" icon="layer-group">
+    Largest positions first
+  </Card>
+  <Card title="By Category" icon="folder">
+    Group by market type
+  </Card>
+</Columns>
+
+---
+
+## Position Actions
+
+From any active position, you can:
+
+| Action | Effect |
+|--------|--------|
+| **View Market** | Go to full market detail |
+| **Share** | Post your position to feed or social media |
+| **Set Alert** | Get notified at specific odds levels |
+| **Challenge** | Invite a friend to take the opposite side |
+| **Hide** | Remove from main view (still tracked) |
+
+---
+
+## Watching Odds Movement
+
+The mini-chart on each position shows:
+
+- **Entry Point**: Marked line at your entry odds
+- **Current Price**: Live odds position
+- **High/Low**: Range since your entry
+- **Trend**: Direction of recent movement
+
+<Tip>
+  Tap the chart to expand and see full historical odds with timestamps.
+</Tip>
+
+---
+
+## Notifications for Positions
+
+Configure alerts for each position:
+
+<AccordionGroup>
+  <Accordion title="Odds Alerts" icon="chart-line">
+    Get notified when odds cross specific thresholds:
+    - Alert if odds reach X%
+    - Alert if odds move by Y% from entry
+    - Alert if you become the majority position holder
+  </Accordion>
+  <Accordion title="Time Alerts" icon="clock">
+    Reminders based on market timing:
+    - 24 hours before resolution
+    - 1 hour before lock
+    - When market locks
+    - When market resolves
+  </Accordion>
+  <Accordion title="Social Alerts" icon="users">
+    Stay informed about friend activity:
+    - Friend enters opposing position
+    - Friend challenges you on this market
+    - Multiple friends now in this market
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Position Analytics (Pro)
+
+<Note>
+  Pro users unlock advanced position analytics including win probability modeling, optimal hedge suggestions, and correlation analysis.
+</Note>
+
+| Metric | Description |
+|--------|-------------|
+| **Win Probability** | AI-estimated chance of correct prediction |
+| **Expected Value** | Statistical return expectation |
+| **Correlation** | How this position relates to your others |
+| **Risk Score** | Position sizing appropriateness |
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="How PnL is Calculated" icon="calculator" href="/concepts/pnl-calculation">
+    Understand your returns in detail
+  </Card>
+  <Card title="Portfolio Dashboard" icon="chart-pie" href="/using/portfolio-dashboard">
+    See all positions in context
+  </Card>
+</CardGroup>
+

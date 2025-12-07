@@ -1,0 +1,233 @@
+---
+title: "How PnL is Calculated"
+sidebarTitle: "How PnL is Calculated"
+description: "Understanding profit and loss on Versus predictions"
+icon: "calculator"
+---
+
+# How PnL is Calculated
+
+Understanding how profit and loss (PnL) works on Versus helps you make smarter predictions. Here's the complete breakdown.
+
+---
+
+## The Basics
+
+PnL is simple at its core:
+
+<Note>
+  **Profit** = Payout - Amount Wagered (if you win)
+  
+  **Loss** = Amount Wagered (if you lose)
+</Note>
+
+Your return depends on the odds at the time you enter your prediction.
+
+---
+
+## Calculating Payouts
+
+When you make a prediction, your potential payout is locked in:
+
+```
+Payout = Amount / (Odds / 100)
+```
+
+### Example Calculation
+
+<Tabs>
+  <Tab title="Example 1: 40% Odds">
+    **Scenario**: You predict YES at 40% odds with 100 tokens
+    
+    | Input | Value |
+    |-------|-------|
+    | Amount | 100 tokens |
+    | Entry Odds | 40% |
+    
+    **Calculation**:
+    ```
+    Payout = 100 / 0.40 = 250 tokens
+    ```
+    
+    | Outcome | Result |
+    |---------|--------|
+    | **If YES wins** | You receive 250 tokens (+150 profit) |
+    | **If NO wins** | You receive 0 tokens (-100 loss) |
+  </Tab>
+  <Tab title="Example 2: 75% Odds">
+    **Scenario**: You predict YES at 75% odds with 100 tokens
+    
+    | Input | Value |
+    |-------|-------|
+    | Amount | 100 tokens |
+    | Entry Odds | 75% |
+    
+    **Calculation**:
+    ```
+    Payout = 100 / 0.75 = 133.33 tokens
+    ```
+    
+    | Outcome | Result |
+    |---------|--------|
+    | **If YES wins** | You receive 133.33 tokens (+33.33 profit) |
+    | **If NO wins** | You receive 0 tokens (-100 loss) |
+    
+    <Info>
+      Higher probability = lower payout, but higher chance of winning.
+    </Info>
+  </Tab>
+  <Tab title="Example 3: 15% Odds">
+    **Scenario**: You predict YES at 15% odds with 100 tokens
+    
+    | Input | Value |
+    |-------|-------|
+    | Amount | 100 tokens |
+    | Entry Odds | 15% |
+    
+    **Calculation**:
+    ```
+    Payout = 100 / 0.15 = 666.67 tokens
+    ```
+    
+    | Outcome | Result |
+    |---------|--------|
+    | **If YES wins** | You receive 666.67 tokens (+566.67 profit) |
+    | **If NO wins** | You receive 0 tokens (-100 loss) |
+    
+    <Info>
+      Long shots pay big but win rarely. Choose wisely.
+    </Info>
+  </Tab>
+</Tabs>
+
+---
+
+## Return on Investment (ROI)
+
+ROI measures efficiency:
+
+```
+ROI = (Profit / Amount) × 100%
+```
+
+| Entry Odds | Potential ROI (if correct) |
+|------------|---------------------------|
+| 10% | +900% |
+| 25% | +300% |
+| 40% | +150% |
+| 50% | +100% |
+| 60% | +66.7% |
+| 75% | +33.3% |
+| 90% | +11.1% |
+
+---
+
+## Unrealized vs Realized PnL
+
+<AccordionGroup>
+  <Accordion title="Unrealized PnL" icon="clock">
+    **Before Resolution**
+    
+    Your unrealized PnL shows what you would make *if the market resolved right now at current odds*. It's theoretical.
+    
+    - Fluctuates as odds move
+    - Green when odds favor your position
+    - Red when odds move against you
+    - Changes second by second
+    
+    <Warning>
+      Unrealized PnL is NOT your actual profit or loss. Only the final outcome determines your return.
+    </Warning>
+  </Accordion>
+  <Accordion title="Realized PnL" icon="flag-checkered">
+    **After Resolution**
+    
+    Your realized PnL is your actual profit or loss once the market resolves:
+    
+    - Fixed and final
+    - Based on your entry odds, not current odds
+    - Equals payout minus amount (if won) or negative amount (if lost)
+    - Updates your overall statistics
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Why Odds Don't Affect Final PnL
+
+A common confusion: **odds moving after your entry don't change your payout**.
+
+<Tip>
+  Your payout is locked at your entry odds. Subsequent odds movement only affects new predictors, not you.
+</Tip>
+
+### Example
+
+1. You enter YES at 40% odds (potential payout: 2.5x)
+2. Odds move to 70% (new entrants get 1.43x)
+3. Odds move to 30% (new entrants get 3.33x)
+4. Market resolves YES
+
+**Your payout**: 2.5x (based on your 40% entry)
+
+---
+
+## Cumulative Statistics
+
+Your profile tracks:
+
+| Stat | Calculation |
+|------|-------------|
+| **Total PnL** | Sum of all realized profits and losses |
+| **Win Rate** | (Wins / Total Resolved) × 100% |
+| **Avg Return** | Total PnL / Number of Predictions |
+| **ROI** | Total PnL / Total Amount Predicted |
+| **Sharpe Ratio** | Risk-adjusted return measure |
+
+---
+
+## Fees
+
+<Note>
+  Versus charges a small fee on winning predictions only. Losing predictions have no additional fee.
+</Note>
+
+| Fee Type | Amount |
+|----------|--------|
+| Platform fee | 2% of profit (winners only) |
+| Withdrawal fee | Network gas costs |
+
+### Fee Example
+
+- You win a prediction with 150 token profit
+- Platform fee: 150 × 2% = 3 tokens
+- Net profit: 147 tokens
+
+---
+
+## Tax Considerations
+
+<Warning>
+  This is not tax advice. Consult a professional for your specific situation.
+</Warning>
+
+Prediction market winnings may be taxable income in your jurisdiction. Consider:
+
+- Keeping records of all predictions
+- Tracking net gains and losses
+- Exporting your prediction history for tax purposes
+- Consulting with a tax professional
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="How Odds Move" icon="chart-line" href="/concepts/odds-movement">
+    Understand what drives probability changes
+  </Card>
+  <Card title="Portfolio Dashboard" icon="chart-pie" href="/using/portfolio-dashboard">
+    See your PnL in context
+  </Card>
+</CardGroup>
+

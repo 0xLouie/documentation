@@ -1,68 +1,111 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "venus",
+  "name": "Versus",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C3AED",
+    "light": "#A78BFA",
+    "dark": "#5B21B6",
+    "background": {
+      "dark": "#0A0A0F",
+      "light": "#FAFAFA"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
+            "icon": "rocket",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started/create-account",
+              "getting-started/connect-friends"
             ]
           },
           {
-            "group": "Customization",
+            "group": "About Versus",
+            "icon": "circle-info",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "about/why-prediction-markets",
+              "about/philosophy",
+              "about/market-opportunity"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Using Versus",
+            "icon": "gamepad",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "using/portfolio-dashboard",
+              "using/leaderboard",
+              "using/live-feed",
+              "using/friends-network",
+              "using/prediction-markets"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Terminal Features",
+            "icon": "terminal",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "terminal/market-cards",
+              "terminal/entering-prediction",
+              "terminal/active-positions",
+              "terminal/vs-friends-challenges"
+            ]
+          },
+          {
+            "group": "Key Concepts",
+            "icon": "lightbulb",
+            "pages": [
+              "concepts/pnl-calculation",
+              "concepts/odds-movement",
+              "concepts/social-betting-layer",
+              "concepts/ranking-algorithm"
+            ]
+          },
+          {
+            "group": "Applications",
+            "icon": "grid-2",
+            "pages": [
+              "applications/competitive-social-trading",
+              "applications/prediction-entertainment",
+              "applications/community-leagues"
+            ]
+          },
+          {
+            "group": "Security & Trust",
+            "icon": "shield-check",
+            "pages": [
+              "security/identity-profiles",
+              "security/fair-play",
+              "security/data-integrity"
+            ]
+          },
+          {
+            "group": "Resources",
+            "icon": "books",
+            "pages": [
+              "resources/glossary",
+              "resources/market-parameters",
+              "resources/access-controls"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Terms",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Legal",
+            "icon": "scale-balanced",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "terms/risk-disclosure",
+              "terms/terms-conditions",
+              "terms/privacy-policy",
+              "terms/cookie-policy"
             ]
           }
         ]
@@ -71,14 +114,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Community",
+          "href": "https://discord.gg/versus",
+          "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Updates",
+          "href": "https://twitter.com/versus",
+          "icon": "x-twitter"
         }
       ]
     }
@@ -91,32 +134,43 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@versus.gg"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Launch App",
+      "href": "https://app.versus.gg"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/versus",
+      "discord": "https://discord.gg/versus",
+      "github": "https://github.com/versus"
     }
+  },
+  "modeToggle": {
+    "default": "dark"
+  },
+  "rounded": "default",
+  "search": {
+    "prompt": "Search Versus docs..."
+  },
+  "seo": {
+    "indexHiddenPages": false
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
   }
 }

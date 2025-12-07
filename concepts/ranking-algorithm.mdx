@@ -1,0 +1,253 @@
+---
+title: "Ranking Algorithm"
+sidebarTitle: "Ranking Algorithm"
+description: "How leaderboard rankings are calculated and updated"
+icon: "ranking-star"
+---
+
+# Ranking Algorithm
+
+Versus uses a sophisticated ranking system to create fair, competitive leaderboards. Here's how it works.
+
+---
+
+## Ranking Philosophy
+
+<Note>
+  The best predictors should rise to the top, regardless of volume or risk tolerance.
+</Note>
+
+Our ranking balances:
+- **Accuracy**: Getting predictions right
+- **Consistency**: Performing well over time
+- **Volume**: Participating actively
+- **Risk Management**: Smart position sizing
+
+---
+
+## Primary Ranking Score
+
+The Versus Score (VS) is calculated as:
+
+```
+VS = (Win Rate × Volume Factor × Consistency Bonus) - Risk Penalty
+```
+
+<Tabs>
+  <Tab title="Win Rate">
+    **Base Performance**
+    
+    Your win rate is weighted by the odds of your entries:
+    
+    ```
+    Weighted Win Rate = Σ(Wins × Inverse Odds) / Σ(All Predictions × Inverse Odds)
+    ```
+    
+    | Prediction Type | Win Rate Impact |
+    |-----------------|-----------------|
+    | Win at 20% odds | High (beat expectations) |
+    | Win at 80% odds | Low (met expectations) |
+    | Loss at 80% odds | High penalty |
+    | Loss at 20% odds | Low penalty |
+    
+    <Info>
+      Beating long odds rewards more than confirming favorites.
+    </Info>
+  </Tab>
+  <Tab title="Volume Factor">
+    **Activity Multiplier**
+    
+    More predictions = higher confidence in your ranking:
+    
+    | Predictions | Factor |
+    |-------------|--------|
+    | 1-10 | 0.5x |
+    | 11-50 | 0.75x |
+    | 51-100 | 1.0x |
+    | 101-250 | 1.1x |
+    | 250+ | 1.2x |
+    
+    <Warning>
+      Volume helps but can't overcome a poor win rate. Quality over quantity.
+    </Warning>
+  </Tab>
+  <Tab title="Consistency">
+    **Streak Bonus**
+    
+    Consistent performance earns bonuses:
+    
+    | Streak Type | Bonus |
+    |-------------|-------|
+    | 5+ win streak | +5% |
+    | 10+ win streak | +10% |
+    | 7-day positive | +3% |
+    | 30-day positive | +8% |
+    | Category expertise | +5% per category |
+    
+    <Tip>
+      Steady performers outrank hot-cold bettors over time.
+    </Tip>
+  </Tab>
+  <Tab title="Risk Penalty">
+    **Sustainability Check**
+    
+    Reckless betting is penalized:
+    
+    | Behavior | Penalty |
+    |----------|---------|
+    | Max bet > 50% of bankroll | -5% |
+    | 3+ losses in a row | -2% |
+    | Single-category concentration | -3% |
+    | Chasing losses pattern | -10% |
+    
+    <Info>
+      Smart risk management is rewarded in rankings.
+    </Info>
+  </Tab>
+</Tabs>
+
+---
+
+## Leaderboard Types
+
+Different leaderboards use different weightings:
+
+<AccordionGroup>
+  <Accordion title="Global Leaderboard" icon="globe">
+    **All-Time Best**
+    
+    - Heaviest weight on total PnL
+    - Minimum 50 predictions required
+    - Volume factor capped at 1.2x
+    - All categories included
+  </Accordion>
+  <Accordion title="Category Leaderboards" icon="folder">
+    **Topic Experts**
+    
+    - Only predictions in specific category count
+    - Win rate weighted more heavily
+    - Minimum 10 category predictions
+    - Badges for top 10 in each category
+  </Accordion>
+  <Accordion title="Friends Leaderboard" icon="user-group">
+    **Inner Circle**
+    
+    - Same algorithm, smaller pool
+    - Real-time updates
+    - Weekly resets available
+    - Challenge record as tiebreaker
+  </Accordion>
+  <Accordion title="Seasonal Leaderboard" icon="trophy">
+    **Quarterly Competition**
+    
+    - Resets every quarter
+    - Highest rewards
+    - Volume matters more (fresh start)
+    - Exclusive seasonal badges
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Time Decay
+
+Recent performance matters more:
+
+| Prediction Age | Weight |
+|----------------|--------|
+| Last 7 days | 100% |
+| 8-30 days | 80% |
+| 31-90 days | 60% |
+| 91-180 days | 40% |
+| 180+ days | 20% |
+
+<Note>
+  This ensures active users can climb and inactive users naturally fall, while preserving historical accomplishments.
+</Note>
+
+---
+
+## Ranking Updates
+
+| Frequency | What Updates |
+|-----------|--------------|
+| **Real-time** | Position change indicators |
+| **Hourly** | Exact rank numbers |
+| **Daily** | Time decay recalculation |
+| **Weekly** | Full algorithm recomputation |
+| **Quarterly** | Seasonal reset |
+
+---
+
+## Rank Tiers
+
+Reach milestones for recognition:
+
+| Tier | Rank Range | Badge |
+|------|------------|-------|
+| **Legend** | #1-10 | 👑 |
+| **Master** | #11-50 | 💎 |
+| **Expert** | #51-100 | 🏆 |
+| **Pro** | #101-500 | ⭐ |
+| **Skilled** | #501-1000 | 🔥 |
+| **Rising** | #1001-5000 | 📈 |
+| **Active** | #5001+ | ✅ |
+
+---
+
+## Anti-Gaming Measures
+
+The algorithm includes protections:
+
+<Columns cols={2}>
+  <Card title="Sybil Protection" icon="users-slash">
+    Multiple accounts detected and banned
+  </Card>
+  <Card title="Wash Trading" icon="recycle">
+    Opposing self-bets don't count
+  </Card>
+  <Card title="Late Entry" icon="clock">
+    Predictions near resolution weighted less
+  </Card>
+  <Card title="Collusion Detection" icon="handshake-slash">
+    Coordinated manipulation flagged
+  </Card>
+</Columns>
+
+---
+
+## Improving Your Rank
+
+Strategies for climbing:
+
+<Steps>
+  <Step title="Find Your Edge">
+    Focus on categories where you have knowledge advantage.
+  </Step>
+  <Step title="Bet Early">
+    Early predictions at favorable odds boost your score more.
+  </Step>
+  <Step title="Stay Consistent">
+    Streaks and steady performance earn bonuses.
+  </Step>
+  <Step title="Manage Risk">
+    Avoid penalties by sizing positions appropriately.
+  </Step>
+  <Step title="Diversify">
+    Predictions across categories show well-rounded skill.
+  </Step>
+</Steps>
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Leaderboard" icon="ranking-star" href="/using/leaderboard">
+    See rankings in action
+  </Card>
+  <Card title="How PnL is Calculated" icon="calculator" href="/concepts/pnl-calculation">
+    Understand the returns behind rankings
+  </Card>
+</CardGroup>
+

@@ -1,0 +1,237 @@
+---
+title: "Data Integrity"
+sidebarTitle: "Data Integrity"
+description: "How we ensure accuracy, security, and reliability"
+icon: "database"
+---
+
+# Data Integrity
+
+Versus is built on a foundation of data integrity. Every prediction, odds movement, and resolution is accurate, secure, and verifiable.
+
+---
+
+## Core Commitments
+
+<Note>
+  Trust is earned through transparency. We make our systems auditable and our processes clear.
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="Accuracy" icon="bullseye">
+    Data reflects reality. Odds, positions, and results are accurate to the millisecond.
+  </Card>
+  <Card title="Consistency" icon="equals">
+    The same query always returns the same result. No hidden variations.
+  </Card>
+  <Card title="Availability" icon="clock">
+    Systems designed for 99.9%+ uptime. Your data when you need it.
+  </Card>
+  <Card title="Durability" icon="hard-drive">
+    Data is never lost. Multiple redundant backups across regions.
+  </Card>
+</CardGroup>
+
+---
+
+## Market Data Integrity
+
+<Tabs>
+  <Tab title="Odds Accuracy">
+    **Real-Time Price Integrity**
+    
+    | Measure | Implementation |
+    |---------|----------------|
+    | Source verification | Multiple data feeds cross-checked |
+    | Update frequency | Sub-second for active markets |
+    | Historical accuracy | Immutable audit trail |
+    | Dispute resolution | Timestamped evidence |
+    
+    <Info>
+      Every odds movement is logged with millisecond precision and is auditable.
+    </Info>
+  </Tab>
+  <Tab title="Resolution Accuracy">
+    **Outcome Verification**
+    
+    Markets resolve based on verifiable facts:
+    
+    - **Official Sources**: Primary authority (sports leagues, election boards, etc.)
+    - **Multiple Confirmations**: Secondary sources verify primary
+    - **Dispute Window**: Period for challenging results
+    - **Arbitration**: Clear process for contested outcomes
+    
+    <Warning>
+      Resolution is final after the dispute window closes. Verify results promptly if you have concerns.
+    </Warning>
+  </Tab>
+  <Tab title="Position Accuracy">
+    **Your Predictions Protected**
+    
+    Position integrity:
+    
+    | Aspect | Protection |
+    |--------|------------|
+    | Entry timestamp | Cryptographically signed |
+    | Entry price | Immutable record |
+    | Position size | Cannot be altered |
+    | Resolution payout | Computed deterministically |
+  </Tab>
+</Tabs>
+
+---
+
+## Technical Infrastructure
+
+<AccordionGroup>
+  <Accordion title="Database Architecture" icon="database">
+    **Multi-Layer Data Protection**
+    
+    - Primary database with ACID compliance
+    - Real-time replication to secondary
+    - Point-in-time recovery capability
+    - Geographically distributed backups
+    
+    Recovery objectives:
+    - RPO (Recovery Point Objective): < 1 minute
+    - RTO (Recovery Time Objective): < 15 minutes
+  </Accordion>
+  <Accordion title="Audit Trail" icon="file-lines">
+    **Complete History**
+    
+    Every action logged:
+    
+    | Event | Data Captured |
+    |-------|---------------|
+    | Prediction entry | User, market, side, amount, odds, timestamp |
+    | Odds change | New odds, trigger, timestamp |
+    | Resolution | Outcome, source, timestamp, payout calculations |
+    | Account change | Before/after state, timestamp, method |
+    
+    Audit logs are immutable and retained indefinitely.
+  </Accordion>
+  <Accordion title="Encryption" icon="lock">
+    **Data Protection**
+    
+    | Data Type | Encryption |
+    |-----------|------------|
+    | At rest | AES-256 |
+    | In transit | TLS 1.3 |
+    | Backups | AES-256 with separate keys |
+    | Sensitive fields | Application-level encryption |
+  </Accordion>
+  <Accordion title="Access Controls" icon="key">
+    **Strict Authorization**
+    
+    Internal access:
+    - Role-based access control (RBAC)
+    - Principle of least privilege
+    - Multi-factor authentication required
+    - Access logging and review
+    
+    No single employee can access production data without audit trail.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## External Data Sources
+
+We integrate trusted data providers:
+
+| Category | Sources |
+|----------|---------|
+| **Sports** | Official league feeds, major sports data providers |
+| **Politics** | Official election results, government sources |
+| **Finance** | Market data providers, exchange APIs |
+| **Entertainment** | Official award announcements, verified news |
+
+<Note>
+  Multiple sources are cross-referenced. Discrepancies trigger manual review.
+</Note>
+
+---
+
+## Incident Response
+
+When issues occur:
+
+<Steps>
+  <Step title="Detection">
+    Automated monitoring identifies anomalies within seconds.
+  </Step>
+  <Step title="Assessment">
+    On-call team evaluates impact and scope.
+  </Step>
+  <Step title="Containment">
+    Affected systems isolated if necessary.
+  </Step>
+  <Step title="Resolution">
+    Issue fixed and verified.
+  </Step>
+  <Step title="Communication">
+    Users notified of any impact.
+  </Step>
+  <Step title="Post-Mortem">
+    Root cause analysis and prevention measures.
+  </Step>
+</Steps>
+
+---
+
+## Dispute Resolution
+
+If you believe data is incorrect:
+
+| Issue Type | Resolution Path |
+|------------|-----------------|
+| Position error | Contact support with screenshots |
+| Resolution dispute | File during dispute window |
+| Odds discrepancy | Report with timestamp evidence |
+| Account data | Request data audit |
+
+<Info>
+  Most disputes are resolved within 24 hours. Complex cases may take up to 7 days.
+</Info>
+
+---
+
+## Transparency Reports
+
+We publish regular transparency reports:
+
+| Report | Frequency | Contents |
+|--------|-----------|----------|
+| Uptime | Monthly | System availability metrics |
+| Resolution Accuracy | Quarterly | Market resolution statistics |
+| Incident Summary | As needed | Details of significant incidents |
+| Security Audit | Annual | Third-party security assessment |
+
+---
+
+## Bug Bounty
+
+Help us maintain integrity:
+
+| Severity | Reward |
+|----------|--------|
+| Critical (data corruption possible) | $10,000+ |
+| High (security vulnerability) | $5,000 |
+| Medium (logic error) | $1,000 |
+| Low (minor issues) | $100 |
+
+Report to: security@versus.gg
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fair Play Principles" icon="scale-balanced" href="/security/fair-play">
+    How integrity enables fair competition
+  </Card>
+  <Card title="Privacy Policy" icon="lock" href="/terms/privacy-policy">
+    How your data is handled
+  </Card>
+</CardGroup>
+

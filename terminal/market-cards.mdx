@@ -1,0 +1,201 @@
+---
+title: "Market Cards"
+sidebarTitle: "Market Cards"
+description: "Understanding the building blocks of the Versus terminal"
+icon: "rectangle-vertical"
+---
+
+# Market Cards
+
+Market Cards are the core UI element of Versus. Each card represents a prediction market and displays all the information you need to make informed decisions.
+
+---
+
+## Anatomy of a Market Card
+
+<Frame caption="Every market card contains these key elements">
+  <img src="/images/hero-dark.png" alt="Market Card Anatomy" className="hidden dark:block rounded-lg" />
+  <img src="/images/hero-light.png" alt="Market Card Anatomy" className="dark:hidden rounded-lg" />
+</Frame>
+
+---
+
+## Card Components
+
+<Tabs>
+  <Tab title="Header">
+    **Market Identification**
+    
+    | Element | Description |
+    |---------|-------------|
+    | **Category Icon** | Visual indicator of market type (🏈 🏛️ 🎬 etc.) |
+    | **Market Title** | Clear, concise description of the event |
+    | **Resolution Timer** | Countdown or date until resolution |
+    | **Status Badge** | Open, Locked, or Resolved |
+  </Tab>
+  <Tab title="Outcomes">
+    **Prediction Options**
+    
+    Each outcome shows:
+    
+    - **Outcome Label**: The selectable option (Yes/No, Team A/Team B, etc.)
+    - **Current Odds**: Live probability as a percentage
+    - **Odds Movement**: ↑↓ indicator showing recent direction
+    - **Your Position**: Highlighted if you've predicted on this outcome
+    
+    <Tip>
+      Green odds are moving in your favor if you hold that position.
+    </Tip>
+  </Tab>
+  <Tab title="Market Stats">
+    **Activity Metrics**
+    
+    | Stat | Meaning |
+    |------|---------|
+    | **Volume** | Total tokens predicted on this market |
+    | **Participants** | Number of unique predictors |
+    | **24h Change** | Volume growth in last day |
+    | **Liquidity** | Depth available for large positions |
+  </Tab>
+  <Tab title="Social Bar">
+    **Friend Activity**
+    
+    The social bar shows:
+    
+    - Friend avatars who have positions
+    - Count of friends active in this market
+    - Challenge indicator if a friend challenged you here
+    - Activity preview on hover
+    
+    <Info>
+      Tap the social bar to see detailed friend positions.
+    </Info>
+  </Tab>
+</Tabs>
+
+---
+
+## Card States
+
+Market cards change appearance based on status:
+
+<AccordionGroup>
+  <Accordion title="Open Market" icon="circle-play">
+    **Active & Trading**
+    
+    - Full color, high contrast
+    - Odds updating in real-time
+    - All actions available
+    - Pulse animation on recent activity
+  </Accordion>
+  <Accordion title="Your Position" icon="bullseye">
+    **You're In This Market**
+    
+    - Highlighted border in your prediction color
+    - Your outcome emphasized
+    - PnL preview shown
+    - Quick-view of entry odds vs current
+  </Accordion>
+  <Accordion title="Locked" icon="lock">
+    **Event In Progress**
+    
+    - Muted colors
+    - "Locked" badge overlay
+    - Odds frozen at lock time
+    - Countdown to resolution
+  </Accordion>
+  <Accordion title="Resolved" icon="flag-checkered">
+    **Outcome Determined**
+    
+    - Winning outcome highlighted in green
+    - Losing outcomes greyed out
+    - Final odds displayed
+    - PnL shown for your position
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Card Interactions
+
+<Columns cols={2}>
+  <Card title="Tap" icon="hand-pointer">
+    Open the full market detail view to enter a prediction
+  </Card>
+  <Card title="Long Press" icon="hand">
+    Quick actions menu: Challenge, Watch, Share
+  </Card>
+  <Card title="Swipe Left" icon="arrow-left">
+    Add to watchlist for later
+  </Card>
+  <Card title="Swipe Right" icon="arrow-right">
+    Quick challenge a friend on this market
+  </Card>
+</Columns>
+
+---
+
+## Card Layouts
+
+Market cards adapt to different contexts:
+
+| Context | Layout |
+|---------|--------|
+| **Terminal Feed** | Compact card, essential info only |
+| **Market Detail** | Expanded view with full stats |
+| **Portfolio** | Position-focused with PnL prominent |
+| **Challenge** | Side-by-side with opponent's position |
+| **Widget** | Minimal, single-outcome display |
+
+---
+
+## Visual Indicators
+
+### Odds Color Coding
+
+| Color | Meaning |
+|-------|---------|
+| 🟢 **Green** | Odds moved in your favor |
+| 🔴 **Red** | Odds moved against you |
+| ⚪ **White/Gray** | Neutral or no position |
+| 🟣 **Purple** | High friend activity |
+| 🟡 **Gold** | Trending market |
+
+### Activity Indicators
+
+| Icon | Meaning |
+|------|---------|
+| 🔥 | Trending (high recent activity) |
+| ⚡ | Fast-moving odds |
+| 👥 | Friends active |
+| ⚔️ | Challenge pending |
+| 👁️ | On your watchlist |
+| 🔔 | Notifications enabled |
+
+---
+
+## Card Customization
+
+<Note>
+  Pro users can customize card appearance in Settings → Display.
+</Note>
+
+Options include:
+- Compact vs expanded default view
+- Show/hide specific metrics
+- Color theme for positions
+- Animation preferences
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Entering a Prediction" icon="crosshairs" href="/terminal/entering-prediction">
+    What happens when you tap a card
+  </Card>
+  <Card title="Active Positions" icon="chart-line" href="/terminal/active-positions">
+    Managing your open predictions
+  </Card>
+</CardGroup>
+

@@ -1,0 +1,211 @@
+---
+title: "Entering a Prediction"
+sidebarTitle: "Entering a Prediction"
+description: "Step-by-step guide to making your first prediction"
+icon: "crosshairs"
+---
+
+# Entering a Prediction
+
+Making a prediction on Versus is quick and intuitive. Here's everything you need to know about entering positions.
+
+---
+
+## Quick Entry Flow
+
+<Steps>
+  <Step title="Select a Market">
+    Browse the Terminal or tap a market from your feed. Each market shows the event, current odds, and key stats.
+  </Step>
+  <Step title="Choose Your Outcome">
+    Tap the outcome you want to predict. This could be Yes/No, Team A/Team B, or multiple options depending on the market type.
+  </Step>
+  <Step title="Set Your Amount">
+    Enter how many tokens you want to commit. The interface shows your potential payout based on current odds.
+  </Step>
+  <Step title="Confirm & Submit">
+    Review your prediction details and tap "Confirm Prediction" to lock in your position.
+  </Step>
+</Steps>
+
+---
+
+## The Prediction Modal
+
+When you tap an outcome, the prediction modal appears:
+
+<Tabs>
+  <Tab title="Position Entry">
+    **Core Input Fields**
+    
+    | Field | Description |
+    |-------|-------------|
+    | **Selected Outcome** | The option you're predicting |
+    | **Current Odds** | Live probability (updates in real-time) |
+    | **Amount** | Tokens to commit |
+    | **Potential Payout** | What you'll receive if correct |
+    | **Implied Probability** | The odds expressed as a percentage |
+  </Tab>
+  <Tab title="Quick Amounts">
+    **Preset Buttons**
+    
+    Quickly set common amounts:
+    - 10 tokens
+    - 25 tokens
+    - 50 tokens
+    - 100 tokens
+    - Max (all available balance)
+    
+    <Tip>
+      Long-press any preset to customize it to your preferred amounts.
+    </Tip>
+  </Tab>
+  <Tab title="Advanced Options">
+    **Additional Settings**
+    
+    - **Limit Order**: Set a target price instead of market order
+    - **Stealth Mode**: Hide this prediction from friends until resolved
+    - **Notifications**: Enable/disable alerts for this position
+    - **Auto-Exit**: Set a take-profit or stop-loss level
+  </Tab>
+</Tabs>
+
+---
+
+## Understanding Odds
+
+<AccordionGroup>
+  <Accordion title="Probability Display" icon="percent">
+    Odds are shown as percentages representing the market's implied probability:
+    
+    - **65%** = Market believes this outcome has a 65% chance
+    - **35%** = Market believes this has a 35% chance
+    
+    Lower probability outcomes offer higher payouts if correct.
+  </Accordion>
+  <Accordion title="Potential Payout Calculation" icon="calculator">
+    Your potential payout is calculated as:
+    
+    ```
+    Payout = Amount / (Odds / 100)
+    
+    Example:
+    Amount: 100 tokens
+    Odds: 40%
+    Payout: 100 / 0.40 = 250 tokens
+    Profit: 150 tokens (150% return)
+    ```
+  </Accordion>
+  <Accordion title="Odds Movement" icon="chart-line">
+    After your prediction:
+    
+    - Your entry odds are locked
+    - Market odds continue to move based on new predictions
+    - Your PnL is calculated against your entry, not current odds
+    
+    <Info>
+      You profit when you're correct, regardless of how odds move after entry.
+    </Info>
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Position Limits
+
+<Note>
+  Position limits exist to ensure market integrity and fair play.
+</Note>
+
+| Limit Type | Free Tier | Pro Tier |
+|------------|-----------|----------|
+| Min per prediction | 1 token | 1 token |
+| Max per prediction | 1,000 tokens | 10,000 tokens |
+| Max per market | 5,000 tokens | 50,000 tokens |
+| Daily volume | 10,000 tokens | Unlimited |
+
+---
+
+## Order Types
+
+<Columns cols={2}>
+  <Card title="Market Order" icon="bolt">
+    **Instant execution at current odds**
+    
+    - Executes immediately
+    - Best for time-sensitive predictions
+    - May experience slight slippage on large orders
+  </Card>
+  <Card title="Limit Order" icon="clock">
+    **Execute only at your target odds**
+    
+    - Set your desired entry price
+    - Order fills when market reaches your level
+    - Expires if not filled by market close
+  </Card>
+</Columns>
+
+---
+
+## Confirmation Screen
+
+Before submitting, you'll see a summary:
+
+| Detail | What to Check |
+|--------|---------------|
+| **Market** | Correct event? |
+| **Outcome** | Right side of the prediction? |
+| **Amount** | Comfortable with the stake? |
+| **Odds** | Fair entry point? |
+| **Payout** | Worth the risk? |
+| **Resolution** | When does this close? |
+
+<Warning>
+  Predictions cannot be cancelled or modified after submission. Double-check before confirming!
+</Warning>
+
+---
+
+## Post-Submission
+
+After entering a prediction:
+
+1. **Confirmation Toast**: Success notification with position details
+2. **Portfolio Update**: Position appears in your active positions
+3. **Feed Post**: Activity visible to friends (unless in Stealth Mode)
+4. **Notifications**: You'll be alerted when the market resolves
+
+---
+
+## Common Questions
+
+<AccordionGroup>
+  <Accordion title="Can I change my prediction?" icon="pen">
+    You cannot modify an existing position, but you can:
+    - Enter an opposing position to hedge
+    - Wait for resolution
+  </Accordion>
+  <Accordion title="What if odds change while I'm entering?" icon="clock">
+    The odds shown when you tap "Confirm" are locked for a few seconds. If you take too long, you'll be prompted to confirm the new odds.
+  </Accordion>
+  <Accordion title="Why can't I enter a larger position?" icon="ban">
+    Position limits are in place for:
+    - Market integrity
+    - Risk management
+    - Fair play (preventing single-user domination)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Active Positions" icon="chart-line" href="/terminal/active-positions">
+    Track and manage your open predictions
+  </Card>
+  <Card title="How PnL is Calculated" icon="calculator" href="/concepts/pnl-calculation">
+    Understand your returns
+  </Card>
+</CardGroup>
+

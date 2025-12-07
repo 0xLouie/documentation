@@ -1,0 +1,227 @@
+---
+title: "How Odds Move"
+sidebarTitle: "How Odds Move"
+description: "Understanding probability dynamics in prediction markets"
+icon: "chart-line"
+---
+
+# How Odds Move
+
+Odds on Versus are dynamic—they shift based on participant predictions. Understanding these movements helps you find value and time your entries.
+
+---
+
+## Market Mechanics
+
+Versus uses an **Automated Market Maker (AMM)** to determine odds:
+
+<Note>
+  More predictions on one outcome → Higher probability displayed → Lower payout for that outcome
+</Note>
+
+The AMM ensures:
+- Always liquidity available
+- Instant execution
+- Fair, manipulation-resistant pricing
+
+---
+
+## How Predictions Affect Odds
+
+<Steps>
+  <Step title="Initial State">
+    A new market opens with balanced odds (often 50/50 or based on external data).
+  </Step>
+  <Step title="First Predictions">
+    Early predictors enter positions. Each prediction shifts odds toward the selected outcome.
+  </Step>
+  <Step title="Price Discovery">
+    As more predictors participate, odds converge toward the market's collective belief.
+  </Step>
+  <Step title="Information Arrives">
+    News and events cause rapid odds movements as predictors react.
+  </Step>
+  <Step title="Resolution">
+    Odds approach 0% or 100% as the outcome becomes clear.
+  </Step>
+</Steps>
+
+---
+
+## Movement Examples
+
+<Tabs>
+  <Tab title="Small Prediction">
+    **10 token prediction on YES at 50% odds**
+    
+    Impact: Minimal
+    
+    | Before | After |
+    |--------|-------|
+    | YES: 50% | YES: 50.1% |
+    | NO: 50% | NO: 49.9% |
+    
+    <Info>
+      Small predictions create tiny movements. You get execution near the displayed price.
+    </Info>
+  </Tab>
+  <Tab title="Large Prediction">
+    **1,000 token prediction on YES at 50% odds**
+    
+    Impact: Significant
+    
+    | Before | After |
+    |--------|-------|
+    | YES: 50% | YES: 55% |
+    | NO: 50% | NO: 45% |
+    
+    <Warning>
+      Large predictions experience "slippage"—your average execution price differs from displayed price.
+    </Warning>
+  </Tab>
+  <Tab title="News Event">
+    **Breaking news favors YES outcome**
+    
+    Impact: Dramatic
+    
+    | Before | After |
+    |--------|-------|
+    | YES: 45% | YES: 78% |
+    | NO: 55% | NO: 22% |
+    
+    <Info>
+      News causes rapid rebalancing as predictors react to new information.
+    </Info>
+  </Tab>
+</Tabs>
+
+---
+
+## Reading Odds Movement
+
+### Direction Indicators
+
+| Symbol | Meaning |
+|--------|---------|
+| ↑ or 🟢 | Odds increasing (more people predicting this) |
+| ↓ or 🔴 | Odds decreasing (fewer people predicting this) |
+| → or ⚪ | Stable (balanced flow) |
+
+### Movement Intensity
+
+| Description | Typical Cause |
+|-------------|---------------|
+| **Stable** (< 1% change) | Normal trading flow |
+| **Moderate** (1-5% change) | New information or large prediction |
+| **Significant** (5-15% change) | Breaking news or whale activity |
+| **Dramatic** (> 15% change) | Major event or resolution approaching |
+
+---
+
+## Slippage Explained
+
+<AccordionGroup>
+  <Accordion title="What is Slippage?" icon="chart-line">
+    Slippage is the difference between expected price and execution price for large orders.
+    
+    **Example**:
+    - Displayed odds: 40%
+    - Your large order moves odds to 45%
+    - Your average execution: ~42.5%
+    
+    You get a blend of prices as your order moves through the market.
+  </Accordion>
+  <Accordion title="Minimizing Slippage" icon="shield">
+    Strategies to reduce slippage:
+    
+    - **Smaller positions**: Less market impact
+    - **Limit orders**: Set maximum price
+    - **Patient entry**: Spread over time
+    - **Low-activity times**: Less competition
+  </Accordion>
+  <Accordion title="Slippage Protection" icon="lock">
+    Versus offers built-in protection:
+    
+    - Maximum slippage setting (default: 2%)
+    - Order rejected if slippage exceeds threshold
+    - Preview shows expected execution price
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Market Efficiency
+
+Prediction markets become more efficient over time:
+
+| Phase | Characteristics |
+|-------|-----------------|
+| **Early** | Wide spreads, volatile, opportunity for alpha |
+| **Mid** | Narrowing spread, stabilizing, following news |
+| **Late** | Tight spread, efficient, hard to beat |
+| **Resolution** | Binary (approaches 0% or 100%) |
+
+<Tip>
+  Early movers often capture the most value, but take more risk. Late movers have less risk but smaller payouts.
+</Tip>
+
+---
+
+## External Factors
+
+Odds respond to real-world events:
+
+<Columns cols={2}>
+  <Card title="Sports" icon="football">
+    - Injury reports
+    - Weather conditions
+    - Line movements
+    - In-game events
+  </Card>
+  <Card title="Politics" icon="ballot">
+    - Polls and surveys
+    - Endorsements
+    - Debate performances
+    - Scandals/news
+  </Card>
+  <Card title="Finance" icon="chart-candlestick">
+    - Earnings reports
+    - Economic data
+    - Fed announcements
+    - Market movements
+  </Card>
+  <Card title="Entertainment" icon="clapperboard">
+    - Critical reviews
+    - Nomination announcements
+    - Industry buzz
+    - Historical patterns
+  </Card>
+</Columns>
+
+---
+
+## Watching Odds Charts
+
+Every market includes an odds history chart:
+
+| Element | What It Shows |
+|---------|---------------|
+| **Line** | Odds over time |
+| **Volume bars** | Activity levels |
+| **Your entry** | Marked point on chart |
+| **Key events** | News annotations |
+| **Time frames** | 1H, 24H, 7D, All |
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="How PnL is Calculated" icon="calculator" href="/concepts/pnl-calculation">
+    Connect odds to your returns
+  </Card>
+  <Card title="Entering a Prediction" icon="crosshairs" href="/terminal/entering-prediction">
+    Put your odds knowledge into action
+  </Card>
+</CardGroup>
+

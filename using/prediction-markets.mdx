@@ -1,0 +1,230 @@
+---
+title: "Prediction Markets (Terminal Home)"
+sidebarTitle: "Prediction Markets"
+description: "Your gateway to all available markets and predictions"
+icon: "chart-mixed-up-circle-dollar"
+---
+
+# Prediction Markets
+
+The Terminal is your home for discovering, analyzing, and entering prediction markets. Browse thousands of markets across every category imaginable.
+
+---
+
+## Terminal Overview
+
+<Frame caption="The Terminal shows all available markets with powerful filtering">
+  <img src="/images/hero-dark.png" alt="Prediction Terminal" className="hidden dark:block rounded-lg" />
+  <img src="/images/hero-light.png" alt="Prediction Terminal" className="dark:hidden rounded-lg" />
+</Frame>
+
+---
+
+## Market Categories
+
+<Tabs>
+  <Tab title="Sports">
+    **Athletic Events**
+    
+    - 🏈 NFL, NCAA Football
+    - 🏀 NBA, NCAA Basketball
+    - ⚽ Soccer (EPL, Champions League, MLS)
+    - ⚾ MLB
+    - 🏒 NHL
+    - 🎾 Tennis (Grand Slams)
+    - 🏎️ F1, NASCAR
+    - 🥊 UFC, Boxing
+    - 🏌️ Golf (PGA, Majors)
+    
+    <Info>
+      Sports markets typically resolve within hours or days of the event.
+    </Info>
+  </Tab>
+  <Tab title="Politics">
+    **Elections & Policy**
+    
+    - 🗳️ US Elections (Federal, State)
+    - 🌍 International Elections
+    - 📜 Policy Outcomes
+    - 🏛️ Supreme Court Decisions
+    - 🤝 International Relations
+    - 📊 Economic Data
+    
+    <Info>
+      Political markets often have the highest liquidity and sharpest odds.
+    </Info>
+  </Tab>
+  <Tab title="Entertainment">
+    **Pop Culture**
+    
+    - 🎬 Award Shows (Oscars, Emmys, Grammys)
+    - 📺 TV Show Outcomes
+    - 🎵 Music Charts
+    - 👶 Celebrity Events
+    - 📱 Social Media Milestones
+    - 🎮 Gaming & Esports
+    
+    <Info>
+      Entertainment markets are great for casual predictors and pop culture fans.
+    </Info>
+  </Tab>
+  <Tab title="Finance">
+    **Markets & Economy**
+    
+    - 📈 Stock Price Targets
+    - 💹 Index Levels
+    - 🏦 Fed Rate Decisions
+    - 📉 Economic Indicators
+    - 💰 Earnings Results
+    - 🏠 Housing Data
+    
+    <Info>
+      Finance markets attract sharp money and move quickly on news.
+    </Info>
+  </Tab>
+  <Tab title="Crypto">
+    **Digital Assets**
+    
+    - ₿ Bitcoin Price Targets
+    - Ξ Ethereum Events
+    - 🪙 Altcoin Movements
+    - 🔗 Protocol Milestones
+    - 📊 DeFi Metrics
+    - 🖼️ NFT Events
+    
+    <Info>
+      Crypto markets are 24/7 and highly volatile—perfect for active predictors.
+    </Info>
+  </Tab>
+  <Tab title="Culture">
+    **Current Events**
+    
+    - 🌡️ Weather Events
+    - 🚀 Space & Science
+    - 🏆 World Records
+    - 📰 News Events
+    - 🎲 Miscellaneous
+    
+    <Info>
+      Culture markets cover everything else—expect the unexpected.
+    </Info>
+  </Tab>
+</Tabs>
+
+---
+
+## Market Information
+
+Each market card displays:
+
+| Element | Description |
+|---------|-------------|
+| **Title** | Clear description of the event |
+| **Category** | Topic classification with icon |
+| **Resolution Date** | When the outcome is determined |
+| **Current Odds** | Live probability for each outcome |
+| **Volume** | Total amount predicted on this market |
+| **Participants** | Number of unique predictors |
+| **Friend Activity** | How many friends have positions |
+
+---
+
+## Filtering Markets
+
+<AccordionGroup>
+  <Accordion title="By Category" icon="folder">
+    Select one or more categories to narrow your view:
+    - Sports, Politics, Entertainment, Finance, Crypto, Culture
+    - Sub-categories available within each
+  </Accordion>
+  <Accordion title="By Time" icon="clock">
+    Filter by resolution window:
+    - Resolving Today
+    - This Week
+    - This Month
+    - 3+ Months Out
+  </Accordion>
+  <Accordion title="By Volume" icon="chart-bar">
+    Sort by market activity:
+    - Highest Volume
+    - Trending (fastest growth)
+    - New Markets
+    - Lowest Volume (contrarian)
+  </Accordion>
+  <Accordion title="By Social" icon="users">
+    Focus on network activity:
+    - Friends Active
+    - Following Active
+    - Most Challenged
+    - Controversial (split odds)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Sorting Options
+
+| Sort | Best For |
+|------|----------|
+| **Trending** | Finding hot markets |
+| **Newest** | Early entry opportunities |
+| **Resolution Soon** | Quick results |
+| **Highest Volume** | Liquid markets |
+| **Friend Activity** | Social competition |
+| **Best Odds** | Value hunting |
+
+---
+
+## Quick Actions
+
+From the Terminal, you can:
+
+<Columns cols={2}>
+  <Card title="Enter Prediction" icon="crosshairs">
+    Tap any market to view details and enter a position
+  </Card>
+  <Card title="Watch Market" icon="eye">
+    Follow markets without entering to track odds movement
+  </Card>
+  <Card title="Challenge Friend" icon="swords">
+    Pick a market and challenge someone to a head-to-head
+  </Card>
+  <Card title="Share Market" icon="share">
+    Send interesting markets to friends or social media
+  </Card>
+</Columns>
+
+---
+
+## Market Status
+
+Markets go through several stages:
+
+<Steps>
+  <Step title="Open">
+    Active trading, predictions accepted, odds moving
+  </Step>
+  <Step title="Locked">
+    Event in progress, no new predictions, existing positions locked
+  </Step>
+  <Step title="Resolving">
+    Outcome determined, awaiting official confirmation
+  </Step>
+  <Step title="Resolved">
+    Final result posted, PnL distributed to winners
+  </Step>
+</Steps>
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Market Cards" icon="rectangle-vertical" href="/terminal/market-cards">
+    Deep dive into market card components
+  </Card>
+  <Card title="Entering a Prediction" icon="crosshairs" href="/terminal/entering-prediction">
+    Step-by-step prediction entry guide
+  </Card>
+</CardGroup>
+
