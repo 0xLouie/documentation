@@ -11,7 +11,7 @@
   "navigation": {
     "groups": [
       {
-        "group": "Getting Started",
+        "group": "GETTING STARTED",
         "pages": [
           "index",
           "getting-started/create-account",
@@ -19,7 +19,7 @@
         ]
       },
       {
-        "group": "About Versus",
+        "group": "ABOUT VERSUS",
         "pages": [
           "about/why-prediction-markets",
           "about/philosophy",
@@ -27,7 +27,7 @@
         ]
       },
       {
-        "group": "Using Versus",
+        "group": "USING VERSUS",
         "pages": [
           "using/portfolio-dashboard",
           "using/leaderboard",
@@ -37,7 +37,7 @@
         ]
       },
       {
-        "group": "Terminal Features",
+        "group": "TERMINAL FEATURES",
         "pages": [
           "terminal/market-cards",
           "terminal/entering-prediction",
@@ -46,7 +46,7 @@
         ]
       },
       {
-        "group": "Key Concepts",
+        "group": "KEY CONCEPTS",
         "pages": [
           "concepts/pnl-calculation",
           "concepts/odds-movement",
@@ -55,7 +55,7 @@
         ]
       },
       {
-        "group": "Applications",
+        "group": "APPLICATIONS",
         "pages": [
           "applications/competitive-social-trading",
           "applications/prediction-entertainment",
@@ -63,7 +63,7 @@
         ]
       },
       {
-        "group": "Security & Trust",
+        "group": "SECURITY & TRUST",
         "pages": [
           "security/identity-profiles",
           "security/fair-play",
@@ -71,7 +71,7 @@
         ]
       },
       {
-        "group": "Resources",
+        "group": "RESOURCES",
         "pages": [
           "resources/glossary",
           "resources/market-parameters",
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "group": "Terms",
+        "group": "TERMS",
         "pages": [
           "terms/risk-disclosure",
           "terms/terms-conditions",
@@ -91,13 +91,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Community",
-          "href": "https://discord.gg/versus",
-          "icon": "discord"
-        },
-        {
-          "anchor": "Updates",
-          "href": "https://twitter.com/versus",
+          "anchor": "Twitter",
+          "href": "https://x.com/versusmarkets",
           "icon": "x-twitter"
         }
       ]
@@ -111,20 +106,18 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@versus.gg"
+        "href": "mailto:help@versusmarkets.io"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Launch App",
-      "href": "https://app.versus.gg"
+      "href": "https://versusmarkets.io"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/versus",
-      "discord": "https://discord.gg/versus",
-      "github": "https://github.com/versus"
+      "x": "https://x.com/versusmarkets"
     }
   },
   "modeToggle": {
