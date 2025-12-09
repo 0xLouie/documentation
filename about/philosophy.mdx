@@ -12,9 +12,7 @@ We're not building another prediction market. We're building a new product categ
 
 ## Core Belief
 
-<Note>
-  **Prediction is already social.** We're giving it structure, identity, and reward.
-</Note>
+Prediction is already social. We're giving it structure, identity, and reward.
 
 Instead of forecasting against a faceless market, users challenge real people. Friends, creators, communities, rivals. Opinions and outcomes become shared gameplay.
 
@@ -31,41 +29,42 @@ Similar to how:
 
 ---
 
-## What We Build Around
+## Why We Win
 
-<CardGroup cols={2}>
-  <Card title="Identity → Retention" icon="user">
-    When you have a profile, reputation, and history, you have something to protect. You come back.
-  </Card>
-  <Card title="Competition → Habit" icon="trophy">
-    When you're competing against people you know, every outcome matters. Prediction becomes daily.
-  </Card>
-  <Card title="Achievement → Loyalty" icon="star">
-    XP, badges, seasons, and ranks give you reasons to stay engaged beyond any single prediction.
-  </Card>
-  <Card title="Social Graph → Network Effects" icon="diagram-project">
-    Every friend makes the platform more valuable. Users bring users.
-  </Card>
-</CardGroup>
+Social experience is the missing piece.
+
+| Element | Result |
+|---------|--------|
+| **Identity** | Retention |
+| **Competition** | Habit |
+| **Achievement** | Loyalty |
+| **Social graph** | Network effects |
+
+Prediction today is a tool. Versus turns it into a community, culture, and ongoing activity people want to return to. Not because markets move, but because people do.
 
 ---
 
-## Design Principles
+## Product & UX (How It Works)
 
 <Steps>
-  <Step title="Social First, Always">
-    Every feature asks: "How does this create connection?" If it doesn't, we reconsider.
+  <Step title="Choose a real-world outcome">
+    Pick any market: sports, politics, crypto, culture
   </Step>
-  <Step title="Competition Over Speculation">
-    We optimize for engagement and rivalry, not trading volume. The goal is fun, not finance.
+  <Step title="Challenge a friend or accept a 1v1">
+    Select an opponent from your network
   </Step>
-  <Step title="Progression Matters">
-    Users should feel like they're building something. Rank, reputation, achievements. Not just gambling.
+  <Step title="Stake confidence">
+    Both sides commit tokens
   </Step>
-  <Step title="Accessible to Everyone">
-    You don't need to understand odds. If you can have an opinion, you can play.
+  <Step title="Result resolves automatically">
+    When the event concludes, winner is determined
+  </Step>
+  <Step title="Winner climbs rankings and unlocks new status">
+    XP, badges, leaderboard position
   </Step>
 </Steps>
+
+Persistent identity (profiles), progression (XP), and seasonal competition give users a reason to return, compete, and improve. Similar to the most successful gaming and social apps.
 
 ---
 
@@ -73,51 +72,32 @@ Similar to how:
 
 Our users aren't speculators. They're competitive social participants:
 
-<AccordionGroup>
-  <Accordion title="Sports Fans" icon="football">
-    Debating outcomes with friends, backing their teams, proving they know the game
-  </Accordion>
-  <Accordion title="Politically Engaged Communities" icon="landmark">
-    Putting conviction behind analysis, tracking accuracy over time
-  </Accordion>
-  <Accordion title="Creator Audiences" icon="video">
-    Participating in prediction rooms, competing in creator-hosted tournaments
-  </Accordion>
-  <Accordion title="Esports-Native Gen Z" icon="gamepad">
-    Already comfortable with rankings, seasons, and competitive progression
-  </Accordion>
-  <Accordion title="Friend Groups" icon="users">
-    Competing to be right, settling debates, creating ongoing rivalries
-  </Accordion>
-</AccordionGroup>
+| User Type | What They Do |
+|-----------|--------------|
+| **Sports fans** | Debating outcomes with friends |
+| **Politically engaged communities** | Putting conviction behind analysis |
+| **Creator audiences** | Participating in prediction rooms and tournaments |
+| **Esports-native Gen Z** | Already comfortable with rankings and seasons |
+| **Friend groups** | Competing to be right |
+
+Prediction is already part of culture. Versus gives it structure, identity, and reward. Making participation visible and meaningful, instead of disposable.
 
 ---
 
-## The End Goal
+## Technology Stack
 
-People return to Versus not because markets move, but because **people do**.
-
-| Why Users Leave Other Platforms | Why Users Stay on Versus |
-|--------------------------------|-------------------------|
-| Won money, cashed out | Climbing the leaderboard |
-| Lost money, gave up | Revenge match with a friend |
-| Got bored alone | Group challenge tonight |
-| No reason to check back | Season rewards unlocking |
-
----
-
-## The Future We See
-
-Prediction becomes:
-- **Infrastructure** embedded in social platforms, newsletters, streams
-- **Creator-driven** with influencer prediction rooms and tournaments
-- **Always-on** via mobile with live outcomes and push notifications
-- **Cultural** not financial. A thing people do together.
+| Component | Technology |
+|-----------|------------|
+| **Frontend** | Next.js + React + TypeScript for a performant, scalable, and maintainable experience |
+| **Authentication** | Privy for secure, user-friendly onchain authentication and wallet identity |
+| **Database** | MongoDB for storing user profiles, positions, leaderboards, and market history |
+| **Backend** | Render for backend services powering market logic, authentication flows, and real-time updates |
+| **Markets** | Kalshi API to execute compliant, regulated trades behind the scenes while Versus delivers a social, gamified UX |
 
 ---
 
 ## Join the Movement
 
-<Card title="Get Started" icon="rocket" href="/getting-started/create-account" horizontal>
+<Card title="Get Started" href="/getting-started/create-account">
   Be part of Season Zero. Build your reputation from day one.
 </Card>
