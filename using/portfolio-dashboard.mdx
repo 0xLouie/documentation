@@ -1,153 +1,102 @@
 ---
 title: "Portfolio Dashboard"
 sidebarTitle: "Portfolio Dashboard"
-description: "Your command center for tracking positions, performance, and progress"
+description: "Your personal command center for tracking performance"
 icon: "chart-pie"
 ---
 
 # Portfolio Dashboard
 
-The Portfolio Dashboard is your home base on Versus. See all your active positions, historical performance, and key metrics at a glance.
+**Location:** `/terminal/portfolio`
+
+The Portfolio Dashboard is your personal command center on Versus. Track your positions, monitor performance, and see how you're doing against friends—all in one place.
 
 ---
 
-## Dashboard Overview
+## Summary Cards
 
-<Frame caption="Your Portfolio Dashboard shows everything you need in one view">
-  <img src="/images/hero-dark.png" alt="Portfolio Dashboard" className="hidden dark:block rounded-lg" />
-  <img src="/images/hero-light.png" alt="Portfolio Dashboard" className="dark:hidden rounded-lg" />
-</Frame>
+At the top of your dashboard, you'll see your key metrics at a glance:
 
----
-
-## Key Sections
-
-<Tabs>
-  <Tab title="Summary Card">
-    The top card shows your most important metrics:
-    
-    | Metric | Description |
-    |--------|-------------|
-    | **Total Value** | Current value of all open positions |
-    | **Total PnL** | Profit/loss across all resolved positions |
-    | **Win Rate** | Percentage of predictions resolved in your favor |
-    | **Active Positions** | Number of open predictions |
-    
-    <Tip>
-      Tap the Summary Card to see a detailed breakdown by category.
-    </Tip>
-  </Tab>
-  <Tab title="Active Positions">
-    See all your open predictions:
-    
-    - **Market Name**: The event you predicted on
-    - **Your Position**: Which outcome you selected
-    - **Entry Price**: The odds when you entered
-    - **Current Price**: Live market odds
-    - **Unrealized PnL**: Potential profit/loss if resolved now
-    
-    <Info>
-      Positions are sorted by resolution date, with the nearest first.
-    </Info>
-  </Tab>
-  <Tab title="Performance Chart">
-    Visual representation of your prediction journey:
-    
-    - Track your cumulative PnL over time
-    - See trends across different time periods
-    - Identify winning and losing streaks
-    - Compare against the market average
-  </Tab>
-  <Tab title="Recent Activity">
-    Your latest actions on Versus:
-    
-    - New positions entered
-    - Positions resolved
-    - Challenge results
-    - Friend interactions
-  </Tab>
-</Tabs>
+<CardGroup cols={3}>
+  <Card title="Total Value" icon="wallet">
+    Your current portfolio worth plus available balance
+  </Card>
+  <Card title="Total PnL" icon="chart-line">
+    Profit and loss with percentage change
+  </Card>
+  <Card title="Active Challenges" icon="swords">
+    Count of ongoing 1v1 bets against other users
+  </Card>
+</CardGroup>
 
 ---
 
-## Filtering & Sorting
+## Active Positions
 
-Customize your view to focus on what matters:
+A detailed table listing all your open predictions:
+
+| Column | Description |
+|--------|-------------|
+| **Market Name** | The event you're predicting on |
+| **Side** | Your position (YES or NO) |
+| **Entry Price** | The odds when you entered |
+| **Current Price** | Live market odds now |
+| **Current Value** | What your position is worth |
+| **PnL** | Profit or loss on this position |
+
+<Tip>
+  Click any row to see full market details and manage your position.
+</Tip>
+
+---
+
+## Vs Friends Panel
+
+The social heart of your dashboard—a dedicated panel showing your active 1v1 bets against friends:
 
 <AccordionGroup>
-  <Accordion title="By Category" icon="folder">
-    Filter positions by market category:
-    - Sports
-    - Politics
-    - Entertainment
-    - Crypto
-    - Finance
-    - Culture
+  <Accordion title="What You'll See" icon="eye">
+    - **Opponent**: Who you're competing against
+    - **Market**: What you're predicting on
+    - **Stake Amount**: How much is on the line
+    - **Status**: Whether you're currently winning or losing
   </Accordion>
-  <Accordion title="By Status" icon="circle-check">
-    View positions by their current state:
-    - **Active**: Awaiting resolution
-    - **Winning**: Currently profitable
-    - **Losing**: Currently at a loss
-    - **Resolved**: Completed predictions
-  </Accordion>
-  <Accordion title="By Time" icon="clock">
-    Sort by different time horizons:
-    - Resolving Today
-    - This Week
-    - This Month
-    - All Time
+  <Accordion title="Quick Actions" icon="bolt">
+    - Challenge to a rematch
+    - View opponent's profile
+    - Share the matchup
+    - See full challenge history
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## Quick Actions
+## Using the Dashboard
 
-From the dashboard, you can:
-
-<Columns cols={2}>
-  <Card title="Enter New Position" icon="plus">
-    Jump to markets and make new predictions
-  </Card>
-  <Card title="Share Performance" icon="share">
-    Post your stats to social media or friends
-  </Card>
-  <Card title="Challenge Friends" icon="swords">
-    Start a head-to-head from any market
-  </Card>
-  <Card title="Export Data" icon="download">
-    Download your prediction history as CSV
-  </Card>
-</Columns>
+<Steps>
+  <Step title="Check Your Stats">
+    Glance at the summary cards to see your overall performance.
+  </Step>
+  <Step title="Review Positions">
+    Scroll through your active positions to see what's in play.
+  </Step>
+  <Step title="Track Friend Battles">
+    The Vs Friends panel shows all your head-to-head action.
+  </Step>
+  <Step title="Take Action">
+    Enter new markets, challenge friends, or manage existing positions.
+  </Step>
+</Steps>
 
 ---
 
-## Performance Insights
-
-<Note>
-  Pro users unlock advanced analytics including category breakdowns, optimal position sizing suggestions, and predictive streak analysis.
-</Note>
-
-### Understanding Your Stats
-
-| Stat | What It Means | Good Benchmark |
-|------|---------------|----------------|
-| Win Rate | % of correct predictions | > 52% |
-| Avg Return | Mean PnL per prediction | > 5% |
-| Sharpe Ratio | Risk-adjusted returns | > 1.0 |
-| Max Drawdown | Largest losing streak | < 25% |
-
----
-
-## Related Features
+## Related
 
 <CardGroup cols={2}>
-  <Card title="Leaderboard" icon="ranking-star" href="/using/leaderboard">
-    See how your performance stacks up
-  </Card>
   <Card title="How PnL is Calculated" icon="calculator" href="/concepts/pnl-calculation">
-    Understand the math behind your returns
+    Understand your returns
+  </Card>
+  <Card title="Vs Friends Challenges" icon="swords" href="/terminal/vs-friends-challenges">
+    Learn about 1v1 betting
   </Card>
 </CardGroup>
-

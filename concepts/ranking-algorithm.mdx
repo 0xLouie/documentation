@@ -1,242 +1,126 @@
 ---
-title: "Ranking Algorithm"
-sidebarTitle: "Ranking Algorithm"
-description: "How leaderboard rankings are calculated and updated"
+title: "Rankings & XP"
+sidebarTitle: "Rankings & XP"
+description: "How progression works on Versus"
 icon: "ranking-star"
 ---
 
-# Ranking Algorithm
+# Rankings & XP
 
-Versus uses a sophisticated ranking system to create fair, competitive leaderboards. Here's how it works.
+Versus isn't just about winning predictions—it's about building a track record. Our ranking and XP systems reward consistent performance and social engagement.
 
 ---
 
-## Ranking Philosophy
+## XP System
+
+Every action on Versus earns XP:
+
+| Action | XP Earned |
+|--------|-----------|
+| Win a prediction | Base XP + bonus for odds beaten |
+| Win a 1v1 challenge | Higher XP (social bonus) |
+| Complete a streak | Streak multiplier |
+| Invite a friend | Referral bonus |
+| Daily login | Consistency bonus |
 
 <Note>
-  The best predictors should rise to the top, regardless of volume or risk tolerance.
+  XP compounds. The more active you are, the faster you progress.
 </Note>
-
-Our ranking balances:
-- **Accuracy**: Getting predictions right
-- **Consistency**: Performing well over time
-- **Volume**: Participating actively
-- **Risk Management**: Smart position sizing
 
 ---
 
-## Primary Ranking Score
+## Ranking Factors
 
-The Versus Score (VS) is calculated as:
+Your leaderboard position considers:
 
-```
-VS = (Win Rate × Volume Factor × Consistency Bonus) - Risk Penalty
-```
-
-<Tabs>
-  <Tab title="Win Rate">
-    **Base Performance**
-    
-    Your win rate is weighted by the odds of your entries:
-    
-    ```
-    Weighted Win Rate = Σ(Wins × Inverse Odds) / Σ(All Predictions × Inverse Odds)
-    ```
-    
-    | Prediction Type | Win Rate Impact |
-    |-----------------|-----------------|
-    | Win at 20% odds | High (beat expectations) |
-    | Win at 80% odds | Low (met expectations) |
-    | Loss at 80% odds | High penalty |
-    | Loss at 20% odds | Low penalty |
-    
-    <Info>
-      Beating long odds rewards more than confirming favorites.
-    </Info>
-  </Tab>
-  <Tab title="Volume Factor">
-    **Activity Multiplier**
-    
-    More predictions = higher confidence in your ranking:
-    
-    | Predictions | Factor |
-    |-------------|--------|
-    | 1-10 | 0.5x |
-    | 11-50 | 0.75x |
-    | 51-100 | 1.0x |
-    | 101-250 | 1.1x |
-    | 250+ | 1.2x |
-    
-    <Warning>
-      Volume helps but can't overcome a poor win rate. Quality over quantity.
-    </Warning>
-  </Tab>
-  <Tab title="Consistency">
-    **Streak Bonus**
-    
-    Consistent performance earns bonuses:
-    
-    | Streak Type | Bonus |
-    |-------------|-------|
-    | 5+ win streak | +5% |
-    | 10+ win streak | +10% |
-    | 7-day positive | +3% |
-    | 30-day positive | +8% |
-    | Category expertise | +5% per category |
-    
-    <Tip>
-      Steady performers outrank hot-cold bettors over time.
-    </Tip>
-  </Tab>
-  <Tab title="Risk Penalty">
-    **Sustainability Check**
-    
-    Reckless betting is penalized:
-    
-    | Behavior | Penalty |
-    |----------|---------|
-    | Max bet > 50% of bankroll | -5% |
-    | 3+ losses in a row | -2% |
-    | Single-category concentration | -3% |
-    | Chasing losses pattern | -10% |
-    
-    <Info>
-      Smart risk management is rewarded in rankings.
-    </Info>
-  </Tab>
-</Tabs>
+<CardGroup cols={2}>
+  <Card title="Win Rate" icon="bullseye">
+    Percentage of correct predictions—quality matters
+  </Card>
+  <Card title="Total Predictions" icon="chart-simple">
+    Volume shows consistency and confidence
+  </Card>
+  <Card title="Average Trade Price" icon="coins">
+    Entry odds demonstrate skill in finding value
+  </Card>
+  <Card title="Total Profit" icon="wallet">
+    Cumulative earnings prove sustained success
+  </Card>
+</CardGroup>
 
 ---
 
 ## Leaderboard Types
 
-Different leaderboards use different weightings:
+<Tabs>
+  <Tab title="Global">
+    **All Users**
+    
+    The definitive ranking of everyone on Versus. Top performers earn recognition, badges, and seasonal rewards.
+  </Tab>
+  <Tab title="Friends">
+    **Your Network**
+    
+    Rank among just your connected friends. This is where bragging rights are earned.
+  </Tab>
+  <Tab title="Seasonal">
+    **Current Season**
+    
+    Fresh leaderboard each season. New users can compete with veterans.
+  </Tab>
+</Tabs>
+
+---
+
+## Seasons
+
+Versus runs in seasons, similar to competitive games:
 
 <AccordionGroup>
-  <Accordion title="Global Leaderboard" icon="globe">
-    **All-Time Best**
-    
-    - Heaviest weight on total PnL
-    - Minimum 50 predictions required
-    - Volume factor capped at 1.2x
-    - All categories included
+  <Accordion title="Season Zero (Now)" icon="flag">
+    The beta season. Invite-only access, Alpha badges, bonus XP multipliers.
   </Accordion>
-  <Accordion title="Category Leaderboards" icon="folder">
-    **Topic Experts**
-    
-    - Only predictions in specific category count
-    - Win rate weighted more heavily
-    - Minimum 10 category predictions
-    - Badges for top 10 in each category
+  <Accordion title="Season Structure" icon="calendar">
+    Each season lasts approximately 3 months. Rankings reset, giving everyone a fresh start.
   </Accordion>
-  <Accordion title="Friends Leaderboard" icon="user-group">
-    **Inner Circle**
-    
-    - Same algorithm, smaller pool
-    - Real-time updates
-    - Weekly resets available
-    - Challenge record as tiebreaker
-  </Accordion>
-  <Accordion title="Seasonal Leaderboard" icon="trophy">
-    **Quarterly Competition**
-    
-    - Resets every quarter
-    - Highest rewards
-    - Volume matters more (fresh start)
-    - Exclusive seasonal badges
+  <Accordion title="Season Rewards" icon="gift">
+    Top performers earn exclusive badges, cosmetics, and recognition that persists forever.
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## Time Decay
+## Badges & Achievements
 
-Recent performance matters more:
+Unlock badges for:
 
-| Prediction Age | Weight |
-|----------------|--------|
-| Last 7 days | 100% |
-| 8-30 days | 80% |
-| 31-90 days | 60% |
-| 91-180 days | 40% |
-| 180+ days | 20% |
+| Achievement | Badge |
+|-------------|-------|
+| Join during beta | Alpha Badge |
+| Win 10 predictions | Predictor |
+| Win 5 challenges | Challenger |
+| 10-win streak | Hot Streak |
+| Top 100 global | Elite |
+| #1 Friend Rank | Champion |
 
-<Note>
-  This ensures active users can climb and inactive users naturally fall, while preserving historical accomplishments.
-</Note>
-
----
-
-## Ranking Updates
-
-| Frequency | What Updates |
-|-----------|--------------|
-| **Real-time** | Position change indicators |
-| **Hourly** | Exact rank numbers |
-| **Daily** | Time decay recalculation |
-| **Weekly** | Full algorithm recomputation |
-| **Quarterly** | Seasonal reset |
+<Tip>
+  Badges display on your profile permanently. Collect them all.
+</Tip>
 
 ---
 
 ## Rank Tiers
 
-Reach milestones for recognition:
+As you accumulate XP, you progress through tiers:
 
-| Tier | Rank Range | Badge |
-|------|------------|-------|
-| **Legend** | #1-10 | 👑 |
-| **Master** | #11-50 | 💎 |
-| **Expert** | #51-100 | 🏆 |
-| **Pro** | #101-500 | ⭐ |
-| **Skilled** | #501-1000 | 🔥 |
-| **Rising** | #1001-5000 | 📈 |
-| **Active** | #5001+ | ✅ |
-
----
-
-## Anti-Gaming Measures
-
-The algorithm includes protections:
-
-<Columns cols={2}>
-  <Card title="Sybil Protection" icon="users-slash">
-    Multiple accounts detected and banned
-  </Card>
-  <Card title="Wash Trading" icon="recycle">
-    Opposing self-bets don't count
-  </Card>
-  <Card title="Late Entry" icon="clock">
-    Predictions near resolution weighted less
-  </Card>
-  <Card title="Collusion Detection" icon="handshake-slash">
-    Coordinated manipulation flagged
-  </Card>
-</Columns>
-
----
-
-## Improving Your Rank
-
-Strategies for climbing:
-
-<Steps>
-  <Step title="Find Your Edge">
-    Focus on categories where you have knowledge advantage.
-  </Step>
-  <Step title="Bet Early">
-    Early predictions at favorable odds boost your score more.
-  </Step>
-  <Step title="Stay Consistent">
-    Streaks and steady performance earn bonuses.
-  </Step>
-  <Step title="Manage Risk">
-    Avoid penalties by sizing positions appropriately.
-  </Step>
-  <Step title="Diversify">
-    Predictions across categories show well-rounded skill.
-  </Step>
-</Steps>
+| Tier | Requirement |
+|------|-------------|
+| **Bronze** | Starting tier |
+| **Silver** | 1,000 XP |
+| **Gold** | 5,000 XP |
+| **Platinum** | 15,000 XP |
+| **Diamond** | 50,000 XP |
+| **Legend** | Top 100 all-time |
 
 ---
 
@@ -244,10 +128,9 @@ Strategies for climbing:
 
 <CardGroup cols={2}>
   <Card title="Leaderboard" icon="ranking-star" href="/using/leaderboard">
-    See rankings in action
+    See the rankings in action
   </Card>
-  <Card title="How PnL is Calculated" icon="calculator" href="/concepts/pnl-calculation">
-    Understand the returns behind rankings
+  <Card title="How PnL Works" icon="calculator" href="/concepts/pnl-calculation">
+    Understand profit calculation
   </Card>
 </CardGroup>
-

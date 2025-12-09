@@ -1,14 +1,10 @@
 <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- VS Icon Mark -->
-  <g>
-    <!-- Left V shape -->
-    <path d="M4 6L12 26L16 16" stroke="#A78BFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Right V shape (inverted, the S suggestion) -->
-    <path d="M16 16L20 26L28 6" stroke="#7C3AED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Crossing element for "versus" -->
-    <circle cx="16" cy="16" r="3" fill="#A78BFA"/>
+  <!-- Versus Logo Mark -->
+  <g transform="translate(0, 2)">
+    <circle cx="14" cy="14" r="12" fill="none" stroke="#E8A598" stroke-width="2"/>
+    <path d="M8 14 L14 20 L20 8" stroke="#E8A598" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   </g>
   
   <!-- VERSUS wordmark -->
-  <text x="38" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#FAFAFA" letter-spacing="-0.02em">VERSUS</text>
+  <text x="34" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#FAFAFA" letter-spacing="0.05em">VERSUS</text>
 </svg>

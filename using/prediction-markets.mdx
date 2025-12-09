@@ -1,230 +1,129 @@
 ---
-title: "Prediction Markets (Terminal Home)"
+title: "Prediction Markets"
 sidebarTitle: "Prediction Markets"
-description: "Your gateway to all available markets and predictions"
+description: "The Terminal home—where you find and enter markets"
 icon: "chart-mixed-up-circle-dollar"
 ---
 
 # Prediction Markets
 
-The Terminal is your home for discovering, analyzing, and entering prediction markets. Browse thousands of markets across every category imaginable.
+**Location:** `/terminal`
+
+The Terminal is your home base for finding prediction markets, entering positions, and challenging friends. This is where the action happens.
 
 ---
 
-## Terminal Overview
+## Market Cards
 
-<Frame caption="The Terminal shows all available markets with powerful filtering">
-  <img src="/images/hero-dark.png" alt="Prediction Terminal" className="hidden dark:block rounded-lg" />
-  <img src="/images/hero-light.png" alt="Prediction Terminal" className="dark:hidden rounded-lg" />
-</Frame>
+Available prediction markets are displayed as cards, each showing:
+
+<CardGroup cols={2}>
+  <Card title="The Question" icon="circle-question">
+    What you're predicting on—clearly stated
+  </Card>
+  <Card title="Two Sides" icon="scale-balanced">
+    YES and NO options for 1v1 betting
+  </Card>
+  <Card title="Live Odds" icon="chart-line">
+    Current pricing for each side
+  </Card>
+  <Card title="Volume" icon="coins">
+    Total money staked in the pot
+  </Card>
+</CardGroup>
 
 ---
 
 ## Market Categories
 
+Filter markets by topic using the category tabs:
+
 <Tabs>
+  <Tab title="Crypto">
+    Bitcoin price movements, protocol events, DeFi milestones, and crypto market predictions
+  </Tab>
   <Tab title="Sports">
-    **Athletic Events**
-    
-    - 🏈 NFL, NCAA Football
-    - 🏀 NBA, NCAA Basketball
-    - ⚽ Soccer (EPL, Champions League, MLS)
-    - ⚾ MLB
-    - 🏒 NHL
-    - 🎾 Tennis (Grand Slams)
-    - 🏎️ F1, NASCAR
-    - 🥊 UFC, Boxing
-    - 🏌️ Golf (PGA, Majors)
-    
-    <Info>
-      Sports markets typically resolve within hours or days of the event.
-    </Info>
+    NFL, NBA, soccer, UFC, and major sporting events from around the world
   </Tab>
   <Tab title="Politics">
-    **Elections & Policy**
-    
-    - 🗳️ US Elections (Federal, State)
-    - 🌍 International Elections
-    - 📜 Policy Outcomes
-    - 🏛️ Supreme Court Decisions
-    - 🤝 International Relations
-    - 📊 Economic Data
-    
-    <Info>
-      Political markets often have the highest liquidity and sharpest odds.
-    </Info>
+    Elections, policy outcomes, international relations, and political events
   </Tab>
-  <Tab title="Entertainment">
-    **Pop Culture**
-    
-    - 🎬 Award Shows (Oscars, Emmys, Grammys)
-    - 📺 TV Show Outcomes
-    - 🎵 Music Charts
-    - 👶 Celebrity Events
-    - 📱 Social Media Milestones
-    - 🎮 Gaming & Esports
-    
-    <Info>
-      Entertainment markets are great for casual predictors and pop culture fans.
-    </Info>
-  </Tab>
-  <Tab title="Finance">
-    **Markets & Economy**
-    
-    - 📈 Stock Price Targets
-    - 💹 Index Levels
-    - 🏦 Fed Rate Decisions
-    - 📉 Economic Indicators
-    - 💰 Earnings Results
-    - 🏠 Housing Data
-    
-    <Info>
-      Finance markets attract sharp money and move quickly on news.
-    </Info>
-  </Tab>
-  <Tab title="Crypto">
-    **Digital Assets**
-    
-    - ₿ Bitcoin Price Targets
-    - Ξ Ethereum Events
-    - 🪙 Altcoin Movements
-    - 🔗 Protocol Milestones
-    - 📊 DeFi Metrics
-    - 🖼️ NFT Events
-    
-    <Info>
-      Crypto markets are 24/7 and highly volatile—perfect for active predictors.
-    </Info>
-  </Tab>
-  <Tab title="Culture">
-    **Current Events**
-    
-    - 🌡️ Weather Events
-    - 🚀 Space & Science
-    - 🏆 World Records
-    - 📰 News Events
-    - 🎲 Miscellaneous
-    
-    <Info>
-      Culture markets cover everything else—expect the unexpected.
-    </Info>
+  <Tab title="All">
+    Browse every available market across all categories
   </Tab>
 </Tabs>
 
 ---
 
-## Market Information
+## How to Enter a Market
 
-Each market card displays:
-
-| Element | Description |
-|---------|-------------|
-| **Title** | Clear description of the event |
-| **Category** | Topic classification with icon |
-| **Resolution Date** | When the outcome is determined |
-| **Current Odds** | Live probability for each outcome |
-| **Volume** | Total amount predicted on this market |
-| **Participants** | Number of unique predictors |
-| **Friend Activity** | How many friends have positions |
+<Steps>
+  <Step title="Browse Markets">
+    Scroll through available markets or filter by category
+  </Step>
+  <Step title="Select a Market">
+    Click any market card to view full details
+  </Step>
+  <Step title="Choose Your Side">
+    Pick YES or NO based on your prediction
+  </Step>
+  <Step title="Set Your Stake">
+    Enter how much you want to commit
+  </Step>
+  <Step title="Confirm">
+    Review and submit your prediction
+  </Step>
+</Steps>
 
 ---
 
-## Filtering Markets
+## Market Information
+
+Each market detail page shows:
+
+| Info | Description |
+|------|-------------|
+| **Question** | Full description of the event |
+| **Resolution Criteria** | How the outcome is determined |
+| **Resolution Date** | When the market closes |
+| **Current Odds** | Live YES/NO pricing |
+| **Total Volume** | Amount staked across all users |
+| **Your Position** | If you've already entered |
+
+---
+
+## Challenge from Markets
+
+See a market you feel confident about? Challenge a friend:
 
 <AccordionGroup>
-  <Accordion title="By Category" icon="folder">
-    Select one or more categories to narrow your view:
-    - Sports, Politics, Entertainment, Finance, Crypto, Culture
-    - Sub-categories available within each
+  <Accordion title="Direct Challenge" icon="swords">
+    Click "Challenge Friend" on any market, pick your side, select an opponent, and set your stake. They'll be notified to accept.
   </Accordion>
-  <Accordion title="By Time" icon="clock">
-    Filter by resolution window:
-    - Resolving Today
-    - This Week
-    - This Month
-    - 3+ Months Out
-  </Accordion>
-  <Accordion title="By Volume" icon="chart-bar">
-    Sort by market activity:
-    - Highest Volume
-    - Trending (fastest growth)
-    - New Markets
-    - Lowest Volume (contrarian)
-  </Accordion>
-  <Accordion title="By Social" icon="users">
-    Focus on network activity:
-    - Friends Active
-    - Following Active
-    - Most Challenged
-    - Controversial (split odds)
+  <Accordion title="Open Challenge" icon="users">
+    Post a challenge without naming an opponent. First friend to accept locks it in.
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## Sorting Options
-
-| Sort | Best For |
-|------|----------|
-| **Trending** | Finding hot markets |
-| **Newest** | Early entry opportunities |
-| **Resolution Soon** | Quick results |
-| **Highest Volume** | Liquid markets |
-| **Friend Activity** | Social competition |
-| **Best Odds** | Value hunting |
-
----
-
-## Quick Actions
-
-From the Terminal, you can:
-
-<Columns cols={2}>
-  <Card title="Enter Prediction" icon="crosshairs">
-    Tap any market to view details and enter a position
-  </Card>
-  <Card title="Watch Market" icon="eye">
-    Follow markets without entering to track odds movement
-  </Card>
-  <Card title="Challenge Friend" icon="swords">
-    Pick a market and challenge someone to a head-to-head
-  </Card>
-  <Card title="Share Market" icon="share">
-    Send interesting markets to friends or social media
-  </Card>
-</Columns>
-
----
-
 ## Market Status
 
-Markets go through several stages:
-
-<Steps>
-  <Step title="Open">
-    Active trading, predictions accepted, odds moving
-  </Step>
-  <Step title="Locked">
-    Event in progress, no new predictions, existing positions locked
-  </Step>
-  <Step title="Resolving">
-    Outcome determined, awaiting official confirmation
-  </Step>
-  <Step title="Resolved">
-    Final result posted, PnL distributed to winners
-  </Step>
-</Steps>
+| Status | Meaning |
+|--------|---------|
+| **Open** | Active, accepting predictions |
+| **Locked** | Event in progress, no new entries |
+| **Resolved** | Outcome determined, payouts processed |
 
 ---
 
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="Market Cards" icon="rectangle-vertical" href="/terminal/market-cards">
-    Deep dive into market card components
-  </Card>
   <Card title="Entering a Prediction" icon="crosshairs" href="/terminal/entering-prediction">
-    Step-by-step prediction entry guide
+    Step-by-step prediction guide
+  </Card>
+  <Card title="Market Cards" icon="rectangle-vertical" href="/terminal/market-cards">
+    Understanding card components
   </Card>
 </CardGroup>
-

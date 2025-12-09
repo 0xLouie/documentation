@@ -1,28 +1,49 @@
 ---
 title: "Social Betting Layer"
 sidebarTitle: "Social Betting Layer"
-description: "How social features transform prediction markets"
+description: "The infrastructure that makes prediction social"
 icon: "layer-group"
 ---
 
 # Social Betting Layer
 
-The Social Betting Layer is what makes Versus different. It's the framework that turns solitary prediction into social competition.
+The Social Betting Layer is what makes Versus different from every other prediction market. It transforms isolated wagering into interactive social competition.
 
 ---
 
-## Core Philosophy
+## The Core Problem We Solve
 
-<Note>
-  Predictions are more engaging when they involve people you know.
-</Note>
+Traditional prediction markets are:
 
-Traditional prediction markets are efficient but cold. The Social Betting Layer adds:
+| Problem | Impact |
+|---------|--------|
+| Anonymous | No identity, no reputation |
+| Transactional | No social feedback |
+| Financial-only | No progression, no fun |
+| Isolated | No reason to return |
 
-- **Identity**: Real profiles, not anonymous wallets
-- **Connection**: Friend networks and communities
-- **Competition**: Leaderboards and challenges
-- **Narrative**: Stories and bragging rights
+**Result:** Users trade, leave, and never come back.
+
+---
+
+## The Versus Solution
+
+We layer social mechanics on top of prediction:
+
+<CardGroup cols={2}>
+  <Card title="Identity" icon="user">
+    Profiles, usernames, avatars—you're a person, not a wallet
+  </Card>
+  <Card title="Competition" icon="trophy">
+    Leaderboards, rankings, 1v1 challenges
+  </Card>
+  <Card title="Progression" icon="star">
+    XP, seasons, achievements, badges
+  </Card>
+  <Card title="Connection" icon="users">
+    Friends, parties, activity feeds
+  </Card>
+</CardGroup>
 
 ---
 
@@ -32,187 +53,100 @@ Traditional prediction markets are efficient but cold. The Social Betting Layer 
   <Tab title="Identity Layer">
     **Who You Are**
     
-    Your Versus identity includes:
-    
-    | Component | Purpose |
-    |-----------|---------|
-    | **Username** | Unique identifier for challenges and mentions |
-    | **Avatar** | Visual recognition in feeds and leaderboards |
-    | **Bio** | Personal expression and strategy hints |
-    | **Track Record** | Verifiable prediction history |
-    | **Badges** | Achievement recognition |
+    - Unique username and handle
+    - Custom avatar
+    - Profile bio
+    - Track record and history
+    - Badges and achievements
     
     <Info>
-      Your identity is your reputation. Guard it and build it.
+      Your identity is persistent. Build a reputation that matters.
     </Info>
   </Tab>
   <Tab title="Social Graph">
     **Your Network**
     
-    Connections create value:
-    
-    - **Friends**: Mutual connections for challenges and friendly competition
-    - **Followers**: People watching your predictions
-    - **Following**: Predictors you learn from
-    - **Rivals**: Frequent opponents with history
-    - **Leagues**: Group memberships
-  </Tab>
-  <Tab title="Activity Layer">
-    **What's Happening**
-    
-    Real-time social signals:
-    
-    - 📊 Friend predictions as they happen
-    - ⚔️ Challenge activity in your network
-    - 🏆 Leaderboard movements
-    - 🔥 Streak alerts and milestones
-    - 💬 Comments and reactions
+    - Friend connections
+    - Friend-of-friend discovery
+    - Party groups
+    - Rival relationships
+    - Community membership
   </Tab>
   <Tab title="Competition Layer">
-    **The Stakes**
+    **How You Compete**
     
-    Competitive elements that drive engagement:
+    - Global leaderboards
+    - Friend leaderboards
+    - 1v1 challenges
+    - Seasonal rankings
+    - Achievement unlocks
+  </Tab>
+  <Tab title="Progression Layer">
+    **How You Grow**
     
-    - **Global Leaderboards**: All-time greats
-    - **Friend Rankings**: Inner circle standings
-    - **Category Experts**: Topic-specific recognition
-    - **Challenges**: Direct head-to-head battles
-    - **Leagues**: Custom competitions
+    - XP from every action
+    - Level progression
+    - Season rewards
+    - Badge collection
+    - Rank tiers
   </Tab>
 </Tabs>
 
 ---
 
-## Social Signals
-
-The Social Betting Layer surfaces information that helps you:
+## Why It Works
 
 <AccordionGroup>
-  <Accordion title="Friend Positions" icon="users">
-    See where friends stand on markets:
-    
-    - Number of friends with positions
-    - Which side they're on (if public)
-    - Their entry timing
-    - Their confidence level (stake size)
-    
-    **Use it to**: Validate your thesis or find contrarian opportunities
+  <Accordion title="Identity → Retention" icon="user">
+    When you have a profile and reputation, you have something to protect. You come back.
   </Accordion>
-  <Accordion title="Smart Money" icon="brain">
-    Identify high-performing predictors:
-    
-    - Top 100 leaderboard activity
-    - Category experts taking positions
-    - High win-rate users entering
-    
-    **Use it to**: Follow sharp money or fade overconfidence
+  <Accordion title="Competition → Habit" icon="trophy">
+    When you're competing against friends, every outcome matters. Prediction becomes daily.
   </Accordion>
-  <Accordion title="Momentum" icon="fire">
-    Track social trends:
-    
-    - Most discussed markets
-    - Fastest growing positions
-    - Viral challenges
-    - Trending predictions
-    
-    **Use it to**: Catch waves early or avoid crowded trades
+  <Accordion title="Achievement → Loyalty" icon="star">
+    XP, badges, and ranks give you reasons to stay engaged beyond any single bet.
+  </Accordion>
+  <Accordion title="Social Graph → Network Effects" icon="diagram-project">
+    Every friend makes the platform more valuable. Users bring users.
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## Social Features by Market Type
-
-Different markets emphasize different social elements:
-
-| Market Type | Primary Social Feature |
-|-------------|----------------------|
-| **Sports** | Challenge friends who root for opponents |
-| **Politics** | Debate-driven predictions with reactions |
-| **Entertainment** | Shared experiences and watch parties |
-| **Finance** | Expert following and smart money tracking |
-| **Crypto** | Community alpha and whale watching |
-
----
-
-## Privacy Controls
-
-You control your social visibility:
-
-<Columns cols={2}>
-  <Card title="Public Mode" icon="eye">
-    - All predictions visible
-    - Full profile accessible
-    - Appear in suggestions
-    - Challengeable by anyone
-  </Card>
-  <Card title="Friends Only" icon="user-group">
-    - Predictions visible to friends
-    - Profile restricted
-    - Hidden from suggestions
-    - Friends can challenge
-  </Card>
-  <Card title="Stealth Mode" icon="ghost">
-    - Predictions hidden until resolved
-    - Activity not in feed
-    - Still earn leaderboard points
-    - Can still challenge
-  </Card>
-  <Card title="Private" icon="lock">
-    - Full privacy
-    - No social visibility
-    - Must opt-in to challenges
-    - Solo experience
-  </Card>
-</Columns>
-
----
-
-## Social Incentives
-
-The layer rewards social behavior:
-
-| Action | Reward |
-|--------|--------|
-| Add first friend | 50 tokens |
-| Connect 5 friends | 250 tokens |
-| First challenge sent | 100 tokens |
-| First challenge won | 150 tokens |
-| Build 10-win streak | 500 tokens |
-| Reach Top 100 | Badge + 1000 tokens |
-
----
-
-## Why It Works
-
-Research shows social features improve:
-
-<Columns cols={3}>
-  <Card title="Retention" icon="repeat">
-    3x higher return rate with friends
-  </Card>
-  <Card title="Engagement" icon="bolt">
-    5x more daily sessions
-  </Card>
-  <Card title="Satisfaction" icon="face-smile">
-    Higher NPS scores
-  </Card>
-</Columns>
+## Engagement Data
 
 <Note>
-  Users with 5+ friends have 85% 30-day retention vs. 25% for solo users.
+  Users with 5+ friends show **3x higher retention** than solo users. The social layer isn't optional—it's the core product.
 </Note>
+
+| User Type | 30-Day Retention |
+|-----------|------------------|
+| Solo (0 friends) | ~25% |
+| Connected (1-4 friends) | ~55% |
+| Social (5+ friends) | ~85% |
+
+---
+
+## Technical Implementation
+
+The Social Betting Layer is powered by:
+
+| Component | Technology |
+|-----------|------------|
+| **Identity** | Privy authentication |
+| **Profiles** | MongoDB storage |
+| **Real-time** | Render backend services |
+| **Markets** | Kalshi API integration |
 
 ---
 
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="Friends Network" icon="user-group" href="/using/friends-network">
+  <Card title="Friends Network" icon="users" href="/using/friends-network">
     Build your social graph
   </Card>
-  <Card title="Vs Friends Challenges" icon="swords" href="/terminal/vs-friends-challenges">
-    Put social betting into action
+  <Card title="1v1 Challenges" icon="swords" href="/terminal/vs-friends-challenges">
+    Use the social layer to compete
   </Card>
 </CardGroup>
-

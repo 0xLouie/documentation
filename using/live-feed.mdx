@@ -1,199 +1,105 @@
 ---
 title: "Live Feed"
 sidebarTitle: "Live Feed"
-description: "Real-time updates from markets and your network"
+description: "Real-time stream of network activity"
 icon: "signal-stream"
 ---
 
 # Live Feed
 
-The Live Feed is your pulse on Versus. See what's happening across markets and within your friend network in real-time.
+**Location:** `/terminal/live-feed`
+
+The Live Feed keeps you connected to what's happening across your network. See predictions, wins, and losses as they happen—in real-time.
 
 ---
 
-## Feed Types
+## Activity Stream
 
-<Tabs>
-  <Tab title="For You">
-    **Personalized Activity**
-    
-    A curated mix of content based on your interests:
-    
-    - Markets you've participated in
-    - Categories you follow
-    - Trending predictions
-    - Algorithmic recommendations
-    
-    <Info>
-      The more you use Versus, the smarter your For You feed becomes.
-    </Info>
-  </Tab>
-  <Tab title="Friends">
-    **Network Activity**
-    
-    Everything happening with people you know:
-    
-    - 🎯 New predictions from friends
-    - ✅ Resolved positions (wins & losses)
-    - ⚔️ Challenge activity
-    - 🏆 Leaderboard movements
-    - 🔥 Streak updates
-    
-    <Tip>
-      Enable push notifications to never miss a friend's big win (or loss).
-    </Tip>
-  </Tab>
-  <Tab title="Markets">
-    **Market Movement**
-    
-    Focus on price action and market dynamics:
-    
-    - Large position entries
-    - Significant odds movements
-    - New markets opening
-    - Markets approaching resolution
-    - High-volume activity
-  </Tab>
-  <Tab title="Global">
-    **Everything on Versus**
-    
-    The firehose of all platform activity:
-    
-    - All public predictions
-    - All market updates
-    - All challenge results
-    - Platform announcements
-  </Tab>
-</Tabs>
+The feed updates continuously with actions from your network, showing you:
+
+<CardGroup cols={3}>
+  <Card title="New Predictions" icon="crosshairs">
+    See when friends enter new markets
+  </Card>
+  <Card title="Betting Wins" icon="trophy">
+    Celebrate victories with your network
+  </Card>
+  <Card title="Betting Losses" icon="circle-xmark">
+    Commiserate (or gloat) over losses
+  </Card>
+</CardGroup>
 
 ---
 
-## Feed Item Types
+## Feed Items
 
-Each item in your feed shows:
+Each activity in your feed shows:
+
+| Element | Description |
+|---------|-------------|
+| **User** | Who took the action |
+| **Action** | What they did (predicted, won, lost) |
+| **Market** | Which market it's about |
+| **Details** | Side taken, amount, outcome |
+| **Time** | When it happened |
+
+---
+
+## Why the Feed Matters
 
 <AccordionGroup>
-  <Accordion title="Prediction Entry" icon="crosshairs">
-    When someone enters a new position:
-    
-    - User avatar and name
-    - Market name and outcome selected
-    - Entry odds
-    - Position size (if public)
-    - Time of entry
-    
-    **Actions**: Challenge, Copy Position, React
+  <Accordion title="Stay Informed" icon="bell">
+    Know what markets your friends are interested in. Their activity often signals opportunities.
   </Accordion>
-  <Accordion title="Position Resolved" icon="flag-checkered">
-    When a prediction closes:
-    
-    - User avatar and name
-    - Market name and outcome
-    - Result (Win/Loss)
-    - PnL amount
-    - Celebratory animation for big wins 🎉
-    
-    **Actions**: Congratulate, Challenge to Rematch, View Details
+  <Accordion title="Find Opportunities" icon="lightbulb">
+    See a friend make a prediction you disagree with? Challenge them to a 1v1.
   </Accordion>
-  <Accordion title="Challenge Update" icon="swords">
-    Head-to-head activity:
-    
-    - Challenger and challenged
-    - Market and stakes
-    - Status (Pending, Accepted, Resolved)
-    - Winner announcement
-    
-    **Actions**: Accept (if challenged), Watch, Create Similar Challenge
+  <Accordion title="Build Community" icon="users">
+    Shared wins and losses create stories. The feed turns prediction into a social experience.
   </Accordion>
-  <Accordion title="Streak Alert" icon="fire">
-    Notable winning or losing streaks:
-    
-    - User and streak count
-    - Recent predictions in streak
-    - Streak type (daily, weekly, category)
-    
-    **Actions**: Follow, Challenge, View Profile
+  <Accordion title="Track Trends" icon="chart-line">
+    Notice when multiple friends are piling into the same market.
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## Interacting with Feed Items
+## Interactions
 
-<Columns cols={3}>
+From any feed item, you can:
+
+<Columns cols={2}>
   <Card title="React" icon="heart">
-    Show support with reactions: 🔥 💯 🎯 😮 💀
+    Show support or rivalry
   </Card>
-  <Card title="Comment" icon="comment">
-    Add your take on any prediction
+  <Card title="Challenge" icon="swords">
+    Turn their prediction into a 1v1
   </Card>
-  <Card title="Share" icon="share">
-    Post to external social platforms
+  <Card title="View Market" icon="eye">
+    Jump to the full market details
+  </Card>
+  <Card title="View Profile" icon="user">
+    Check out their stats and history
   </Card>
 </Columns>
 
 ---
 
-## Feed Controls
-
-### Filtering
-
-| Filter | Effect |
-|--------|--------|
-| **Category** | Show only specific topics |
-| **Friends Only** | Hide non-friend activity |
-| **Big Moves** | Only significant PnL events |
-| **Challenges** | Focus on head-to-head action |
-
-### Notifications
-
-Control what triggers push notifications:
-
-<AccordionGroup>
-  <Accordion title="Friend Activity" icon="user-group">
-    - When friends enter predictions
-    - When friends' positions resolve
-    - When friends challenge you
-    - When friends hit streaks
-  </Accordion>
-  <Accordion title="Market Updates" icon="chart-line">
-    - Markets you're in move significantly
-    - Your positions are approaching resolution
-    - High-conviction opportunities (Pro)
-  </Accordion>
-  <Accordion title="Social" icon="bell">
-    - Reactions to your predictions
-    - Comments on your activity
-    - New followers
-    - Mentions
-  </Accordion>
-</AccordionGroup>
-
----
-
 ## Real-Time Updates
 
-The feed updates automatically:
-
-- **WebSocket Connection**: Instant updates without refresh
-- **Smart Batching**: Multiple events grouped for readability
-- **Offline Queue**: Catches you up when you return
-- **Pull to Refresh**: Manual refresh always available
-
 <Note>
-  On mobile, the feed conserves battery by reducing update frequency when the app is backgrounded.
+  The feed updates automatically via WebSocket connection. No need to refresh—new activity appears instantly.
 </Note>
 
 ---
 
-## Related Features
+## Related
 
 <CardGroup cols={2}>
-  <Card title="Friends Network" icon="user-group" href="/using/friends-network">
+  <Card title="Friends Network" icon="users" href="/using/friends-network">
     Manage who appears in your feed
   </Card>
   <Card title="Vs Friends Challenges" icon="swords" href="/terminal/vs-friends-challenges">
-    Turn feed activity into head-to-head battles
+    Turn feed activity into battles
   </Card>
 </CardGroup>
-

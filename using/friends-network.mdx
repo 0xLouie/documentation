@@ -1,212 +1,124 @@
 ---
 title: "Friends Network"
 sidebarTitle: "Friends Network"
-description: "Build your prediction community and compete with people you know"
-icon: "user-group"
+description: "Build your social graph and manage connections"
+icon: "users"
 ---
 
 # Friends Network
 
-Your Friends Network is the heart of the Versus experience. Connect with friends, follow top predictors, and build your competitive community.
+**Location:** `/terminal/friends`
+
+Your Friends Network is the foundation of social competition on Versus. Build your network, manage connections, and grow your competitive circle.
 
 ---
 
-## Network Overview
+## Friend List
 
-<Frame caption="Your network page shows all your connections and suggestions">
-  <img src="/images/hero-dark.png" alt="Friends Network" className="hidden dark:block rounded-lg" />
-  <img src="/images/hero-light.png" alt="Friends Network" className="dark:hidden rounded-lg" />
-</Frame>
+Your connected users appear in a list showing:
+
+| Info | Description |
+|------|-------------|
+| **Name & Avatar** | Their profile identity |
+| **Status** | Online or Offline indicator |
+| **Quick Actions** | Challenge, view profile, remove |
+
+<Tip>
+  Online friends are ready to accept challenges immediately.
+</Tip>
 
 ---
 
-## Connection Types
+## Finding Friends
 
 <Tabs>
-  <Tab title="Friends">
-    **Mutual Connections**
+  <Tab title="Search">
+    **Find Existing Users**
     
-    Friends are two-way connections where both parties have accepted:
+    Use the search bar to find other users by:
+    - Display name
+    - Unique handle
     
-    - See each other's predictions in real-time
-    - Challenge each other directly
-    - Appear on each other's friend leaderboards
-    - Full profile visibility
+    Results show matching profiles with an "Add Friend" button.
+  </Tab>
+  <Tab title="Invite">
+    **Bring New Users**
+    
+    Don't see your friends on Versus yet? Invite them:
+    
+    - **Direct Link**: Copy your personal invite link
+    - **Email**: Send an invite directly from the app
     
     <Info>
-      Friend limit: 25 (Free) | Unlimited (Pro)
+      Friends who join via your link are automatically connected.
     </Info>
-  </Tab>
-  <Tab title="Followers">
-    **One-Way Following**
-    
-    Anyone can follow you (unless you disable it):
-    
-    - Followers see your public predictions
-    - You don't see their activity unless you follow back
-    - Followers can challenge you (if enabled)
-    - Building followers increases your influence
-  </Tab>
-  <Tab title="Following">
-    **People You Watch**
-    
-    Follow interesting predictors without friending:
-    
-    - See their predictions in your feed
-    - Track their performance over time
-    - Learn from top predictors' strategies
-    - No reciprocal access to your activity
   </Tab>
 </Tabs>
 
 ---
 
-## Finding People
+## Managing Connections
 
 <AccordionGroup>
-  <Accordion title="Search" icon="magnifying-glass">
-    Find specific users by:
-    - Username (exact or partial match)
-    - Display name
-    - Connected wallet address
-    
-    ```
-    Search: "crypto" → Shows all users with "crypto" in their username
-    ```
+  <Accordion title="Send Friend Request" icon="user-plus">
+    Click "Add Friend" on any profile. They'll receive a notification to accept or decline.
   </Accordion>
-  <Accordion title="Suggestions" icon="lightbulb">
-    Versus suggests connections based on:
-    - Friends of friends
-    - Similar prediction patterns
-    - Same categories of interest
-    - Geographic proximity (optional)
-    - Contacts on your phone (with permission)
+  <Accordion title="Accept Requests" icon="check">
+    Incoming requests appear in your notifications. Accept to connect, decline to ignore.
   </Accordion>
-  <Accordion title="Leaderboards" icon="ranking-star">
-    Discover top predictors:
-    - Global leaderboard champions
-    - Category experts
-    - Rising stars
-    - Hot streaks
-  </Accordion>
-  <Accordion title="Invite Links" icon="link">
-    Share your personal invite link:
-    
-    `versus.gg/u/yourusername`
-    
-    Friends who join via your link are auto-connected.
+  <Accordion title="Remove Friend" icon="user-minus">
+    Remove connections anytime. They won't be notified, but you'll disappear from each other's networks.
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## Network Stats
-
-Your profile shows key network metrics:
-
-| Stat | Description |
-|------|-------------|
-| **Friends** | Mutual connections count |
-| **Followers** | Users following you |
-| **Following** | Users you follow |
-| **Challenge Record** | W-L record against friends |
-| **Network PnL Rank** | Your rank among friends |
-
----
-
-## Privacy Settings
-
-<Columns cols={2}>
-  <Card title="Profile Visibility" icon="eye">
-    Control who sees your full profile:
-    - Public (everyone)
-    - Friends Only
-    - Private (only you)
-  </Card>
-  <Card title="Prediction Visibility" icon="lock">
-    Hide predictions until resolved:
-    - All Public
-    - Stealth Mode (hidden until resolution)
-    - Friends Only
-  </Card>
-  <Card title="Challenge Settings" icon="shield">
-    Who can challenge you:
-    - Everyone
-    - Friends Only
-    - Nobody
-  </Card>
-  <Card title="Discovery" icon="compass">
-    Appear in suggestions:
-    - Enabled
-    - Disabled
-  </Card>
-</Columns>
-
----
-
-## Friend Activity Feed
-
-When you have friends, your feed shows:
-
-<Steps>
-  <Step title="Real-Time Predictions">
-    See the moment a friend enters a new position—before the market moves.
-  </Step>
-  <Step title="Position Results">
-    Celebrate wins and commiserate losses together when positions resolve.
-  </Step>
-  <Step title="Challenge Updates">
-    Track head-to-head battles within your network.
-  </Step>
-  <Step title="Milestone Alerts">
-    Get notified when friends hit streaks, rank up, or achieve goals.
-  </Step>
-</Steps>
-
----
-
-## Network Actions
+## Why Friends Matter
 
 <CardGroup cols={2}>
-  <Card title="Bulk Challenge" icon="users">
-    Challenge multiple friends on the same market simultaneously
+  <Card title="1v1 Challenges" icon="swords">
+    Challenge friends directly on any market
   </Card>
-  <Card title="Create League" icon="trophy">
-    Turn your friend group into a private competition
+  <Card title="Friend Leaderboard" icon="ranking-star">
+    Compete for rank among your network
   </Card>
-  <Card title="Share Profile" icon="share">
-    Spread your invite link to grow your network
+  <Card title="Activity Feed" icon="signal-stream">
+    See friends' predictions in real-time
   </Card>
-  <Card title="Export Contacts" icon="download">
-    Download your connection list
+  <Card title="Bragging Rights" icon="trophy">
+    Prove you're the best predictor in your circle
   </Card>
 </CardGroup>
 
 ---
 
-## Network Health
+## Network Stats
+
+Your profile displays:
+
+| Stat | Description |
+|------|-------------|
+| **Friends Count** | Total connections |
+| **Challenge Record** | W-L against friends |
+| **Friend Rank** | Position on friend leaderboard |
+
+---
+
+## Invite Rewards
 
 <Note>
-  Active networks correlate with better retention and more fun. We recommend connecting with at least 5 friends for the optimal Versus experience.
+  Earn XP bonuses for every friend who joins Versus through your invite link and makes their first prediction.
 </Note>
-
-| Network Size | Experience Level |
-|--------------|------------------|
-| 0 friends | Solo mode (limited) |
-| 1-4 friends | Getting started |
-| 5-15 friends | Sweet spot |
-| 15+ friends | Power user |
 
 ---
 
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="Connect Your Friends" icon="user-plus" href="/getting-started/connect-friends">
-    Step-by-step guide to building your network
-  </Card>
   <Card title="Vs Friends Challenges" icon="swords" href="/terminal/vs-friends-challenges">
     Put your friendships to the test
   </Card>
+  <Card title="Live Feed" icon="signal-stream" href="/using/live-feed">
+    Follow friend activity in real-time
+  </Card>
 </CardGroup>
-

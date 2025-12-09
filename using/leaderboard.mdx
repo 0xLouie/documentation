@@ -1,73 +1,38 @@
 ---
 title: "Leaderboard"
 sidebarTitle: "Leaderboard"
-description: "Compete for glory on global and friend rankings"
+description: "The competitive ranking system for Versus"
 icon: "ranking-star"
 ---
 
 # Leaderboard
 
-The Leaderboard is where reputations are made. See how you stack up against the world, your community, and your friends.
+**Location:** `/terminal/leaderboard`
+
+The Leaderboard is where reputations are built and rivalries are born. See how you stack up against the world—and more importantly, against your friends.
 
 ---
 
-## Leaderboard Types
+## Leaderboard Views
 
 <Tabs>
-  <Tab title="Global">
-    **All Versus Users**
+  <Tab title="Global Rankings">
+    **Everyone on Versus**
     
-    Compete against every predictor on the platform. The top 100 are displayed with full stats, and you can always see your own rank.
+    The definitive ranking of all users on the platform based on performance. See who the best predictors are and where you stand among them.
     
     <Info>
-      Global rankings require a minimum of 10 resolved predictions to qualify.
+      Global rankings update in real-time as predictions resolve.
     </Info>
-    
-    | Rank | Rewards |
-    |------|---------|
-    | #1 | 🥇 Gold Badge + 10,000 tokens |
-    | #2-3 | 🥈 Silver Badge + 5,000 tokens |
-    | #4-10 | 🥉 Bronze Badge + 2,500 tokens |
-    | #11-100 | Top 100 Badge + 1,000 tokens |
   </Tab>
-  <Tab title="Friends">
+  <Tab title="Friends Rankings">
     **Your Network Only**
     
-    The most competitive leaderboard—see exactly where you stand against people you know.
-    
-    - Updates in real-time
-    - Shows win rate and total PnL
-    - Tap any friend to see their recent predictions
-    - Challenge directly from the leaderboard
+    A filtered view showing only your connected friends. This is where the real competition happens—bragging rights among people you actually know.
     
     <Tip>
-      Connect more friends to make this leaderboard more interesting!
+      Connect more friends to make this leaderboard more competitive!
     </Tip>
-  </Tab>
-  <Tab title="Category">
-    **Topic-Specific Rankings**
-    
-    Prove your expertise in specific areas:
-    
-    - 🏈 **Sports**: NFL, NBA, Soccer, etc.
-    - 🏛️ **Politics**: Elections, policy, world events
-    - 🎬 **Entertainment**: Awards, releases, pop culture
-    - 📈 **Finance**: Markets, earnings, economic data
-    - 🌐 **Crypto**: Price movements, protocol events
-    
-    <Info>
-      Category badges show your standing in your best topics.
-    </Info>
-  </Tab>
-  <Tab title="Leagues">
-    **Custom Competitions**
-    
-    Private leaderboards for specific groups:
-    
-    - Invite-only leagues
-    - Custom scoring rules
-    - Time-limited competitions
-    - Winner-takes-all tournaments
   </Tab>
 </Tabs>
 
@@ -75,96 +40,49 @@ The Leaderboard is where reputations are made. See how you stack up against the 
 
 ## Ranking Metrics
 
-Leaderboards can be sorted by different metrics:
+The leaderboard displays detailed performance data for each user:
 
-<AccordionGroup>
-  <Accordion title="Total PnL" icon="coins">
-    **Default Ranking**
-    
-    Raw profit/loss across all predictions. Rewards high-volume traders who consistently win.
-    
-    *Best for: Measuring absolute performance*
-  </Accordion>
-  <Accordion title="Win Rate" icon="bullseye">
-    **Accuracy Ranking**
-    
-    Percentage of correct predictions. Minimum 20 predictions required.
-    
-    *Best for: Measuring prediction accuracy*
-  </Accordion>
-  <Accordion title="ROI" icon="chart-line">
-    **Efficiency Ranking**
-    
-    Return on investment as a percentage. Shows who makes the most per token risked.
-    
-    *Best for: Measuring efficiency regardless of volume*
-  </Accordion>
-  <Accordion title="Streak" icon="fire">
-    **Hot Hand Ranking**
-    
-    Current consecutive wins. Resets on any loss.
-    
-    *Best for: Identifying who's on fire right now*
-  </Accordion>
-</AccordionGroup>
-
----
-
-## Time Periods
-
-View rankings across different timeframes:
-
-| Period | Description |
+| Metric | Description |
 |--------|-------------|
-| **Today** | Positions resolved in the last 24 hours |
-| **This Week** | Sunday to Saturday |
-| **This Month** | Current calendar month |
-| **This Season** | Quarterly (resets Jan, Apr, Jul, Oct) |
-| **All Time** | Since your account was created |
-
-<Note>
-  Seasonal leaderboards offer the biggest rewards. Top performers each season earn exclusive badges and token prizes.
-</Note>
+| **Rank** | Position on the leaderboard |
+| **User Name** | Profile name and avatar |
+| **Total Predictions** | Number of predictions made |
+| **Win Rate** | Percentage of correct predictions |
+| **Avg Trade Price** | Average entry odds |
+| **Total Profit** | Cumulative earnings |
 
 ---
 
-## Your Profile Card
-
-On any leaderboard, your profile shows:
-
-<Columns cols={4}>
-  <Card title="Rank" icon="medal">
-    Your position
-  </Card>
-  <Card title="Movement" icon="arrow-up">
-    Change since yesterday
-  </Card>
-  <Card title="PnL" icon="coins">
-    Total profit/loss
-  </Card>
-  <Card title="Win Rate" icon="percent">
-    Accuracy percentage
-  </Card>
-</Columns>
-
----
-
-## Leaderboard Actions
+## Climbing the Ranks
 
 <CardGroup cols={2}>
-  <Card title="Challenge Top Players" icon="swords">
-    Tap any user to send them a direct challenge
+  <Card title="Make Smart Predictions" icon="brain">
+    Win rate matters. Quality over quantity.
   </Card>
-  <Card title="Follow" icon="user-plus">
-    Follow top predictors to see their activity in your feed
+  <Card title="Stay Active" icon="bolt">
+    Volume builds your profile and proves consistency.
   </Card>
-  <Card title="Share Rank" icon="share">
-    Show off your position on social media
+  <Card title="Challenge Friends" icon="swords">
+    1v1 wins boost your standing in friend rankings.
   </Card>
-  <Card title="View Stats" icon="chart-simple">
-    Deep dive into any user's prediction history
+  <Card title="Build Streaks" icon="fire">
+    Consecutive wins accelerate your climb.
   </Card>
 </CardGroup>
+
+---
+
+## Seasons & Rewards
+
+<Note>
+  Leaderboard rankings reset each season. Top performers earn exclusive badges, XP bonuses, and recognition.
+</Note>
+
+| Season Rank | Reward |
+|-------------|--------|
+| Top 10 | Alpha Badge + Major XP |
+| Top 50 | Season Badge + XP Bonus |
+| Top 100 | Recognition + XP |
 
 ---
 
@@ -172,10 +90,9 @@ On any leaderboard, your profile shows:
 
 <CardGroup cols={2}>
   <Card title="Ranking Algorithm" icon="calculator" href="/concepts/ranking-algorithm">
-    Learn how ranks are calculated
+    How rankings are calculated
   </Card>
-  <Card title="Community Leagues" icon="trophy" href="/applications/community-leagues">
-    Create or join private competitions
+  <Card title="Friends Network" icon="users" href="/using/friends-network">
+    Build your competitive circle
   </Card>
 </CardGroup>
-

@@ -3,9 +3,9 @@
   "theme": "maple",
   "name": "Versus",
   "colors": {
-    "primary": "#7C3AED",
-    "light": "#A78BFA",
-    "dark": "#5B21B6"
+    "primary": "#E8A598",
+    "light": "#F5C4BB",
+    "dark": "#D4867A"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -120,15 +120,6 @@
       "href": "https://app.versus.gg"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity"
-    ]
-  },
   "footer": {
     "socials": {
       "x": "https://x.com/versus",
@@ -139,12 +130,8 @@
   "modeToggle": {
     "default": "dark"
   },
-  "rounded": "default",
   "search": {
     "prompt": "Search Versus docs..."
-  },
-  "seo": {
-    "indexHiddenPages": false
   },
   "feedback": {
     "thumbsRating": true,
