@@ -4,17 +4,34 @@ sidebarTitle: "Meet Versus"
 description: "The World's First Social Prediction Network"
 ---
 
-<CardGroup cols={2}>
-  <Card title="What is Versus?" icon="bullseye-arrow" href="/about/why-prediction-markets">
-    Prediction as social competition, not isolated wagering
-  </Card>
-  <Card title="The Terminal" icon="bolt" href="/using/prediction-markets">
-    Find markets, challenge friends, climb the leaderboards
-  </Card>
-  <Card title="Competitive Social Prediction" icon="trophy" href="/about/philosophy">
-    1v1 matches, leaderboards, rankings, achievements, seasons
-  </Card>
-  <Card title="Get Started" icon="rocket" href="/getting-started/create-account">
-    Create your account and join the beta
-  </Card>
-</CardGroup>
+<div className="absolute inset-0 -z-10 -mx-6 -mt-6" style={{marginLeft: '-24px', marginRight: '-24px', marginTop: '-24px', width: 'calc(100% + 48px)'}}>
+  <img src="/background.jpg" alt="" className="w-full h-full object-cover" style={{minHeight: '100vh'}} />
+  <div className="absolute inset-0 bg-black/40" />
+</div>
+
+<div className="relative flex flex-col items-center justify-center text-center w-full py-24">
+  <img
+    src="/logo/dark.svg"
+    alt="Versus Logo"
+    className="h-28 mb-8"
+  />
+  <h1 className="text-5xl font-bold text-white mb-4">Meet Versus</h1>
+  <p className="text-xl text-gray-200 mb-16">
+    The World's First Social Prediction Network
+  </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full">
+    <Card title="What is Versus?" icon="bullseye-arrow" href="/about/why-prediction-markets">
+      Prediction as social competition, not isolated wagering
+    </Card>
+    <Card title="The Terminal" icon="bolt" href="/using/prediction-markets">
+      Find markets, challenge friends, climb the leaderboards
+    </Card>
+    <Card title="Competitive Social Prediction" icon="trophy" href="/about/philosophy">
+      1v1 matches, leaderboards, rankings, achievements, seasons
+    </Card>
+    <Card title="Get Started" icon="rocket" href="/getting-started/create-account">
+      Create your account and join the beta
+    </Card>
+  </div>
+</div>
