@@ -1,9 +1,12 @@
-/* Landing page full-width background */
+/* Landing page full-width background - aggressive override */
 .landing-hero {
   position: relative;
-  margin: -24px -24px 0 -24px;
-  padding: 80px 24px;
-  min-height: 100vh;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: -32px;
+  padding: 120px 48px;
+  min-height: calc(100vh - 60px);
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,13 +15,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 .landing-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
 
@@ -27,22 +31,24 @@
   z-index: 1;
 }
 
+.landing-hero .hero-logo {
+  height: 140px;
+  margin-bottom: 2rem;
+}
+
 .landing-hero h1 {
   color: white !important;
-  font-size: 3.5rem;
+  font-size: 3.75rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .landing-hero .tagline {
   color: rgba(255, 255, 255, 0.85);
-  font-size: 1.25rem;
-  margin-bottom: 3rem;
-}
-
-.landing-hero .logo {
-  height: 7rem;
-  margin-bottom: 2rem;
+  font-size: 1.35rem;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 .landing-cards {
@@ -51,9 +57,22 @@
   gap: 1.5rem;
   max-width: 56rem;
   width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* Card styling for landing */
+.landing-cards .card {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 @media (max-width: 768px) {
+  .landing-hero {
+    padding: 80px 24px;
+  }
+  
   .landing-cards {
     grid-template-columns: 1fr;
   }
@@ -61,11 +80,14 @@
   .landing-hero h1 {
     font-size: 2.5rem;
   }
+  
+  .landing-hero .hero-logo {
+    height: 100px;
+  }
 }
 
-/* Hide default page elements on landing */
+/* Hide breadcrumb and page title on landing page */
 [data-page="index"] #page-title,
 [data-page="index"] .eyebrow {
-  display: none;
+  display: none !important;
 }
-
