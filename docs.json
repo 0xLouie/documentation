@@ -87,16 +87,7 @@
           "terms/cookie-policy"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Twitter",
-          "href": "https://x.com/versusmarkets",
-          "icon": "x-twitter"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
