@@ -8,19 +8,8 @@
 }
 
 /* ===================================================================
-   HERO SECTION - Content area only (not sidebar)
+   HERO SECTION
    =================================================================== */
-
-/* Hero Container - applies to content area when hero exists */
-body:has(.intro-hero) #content-container {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 2rem;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  overflow-x: hidden !important;
-}
 
 /* Background Image - Fixed, offset for sidebar */
 .hero-background {
@@ -62,16 +51,6 @@ body:has(.intro-hero) #content-container {
   }
 }
 
-/* Hero Container Flexbox */
-.intro-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 120px);
-  padding: 2rem;
-}
-
 /* Main Hero Section */
 .intro-hero {
   text-align: center;
@@ -81,35 +60,51 @@ body:has(.intro-hero) #content-container {
   position: relative;
 }
 
+/* Hero Container Flexbox */
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0;
+}
+
 /* Hero Logo */
-.intro-hero .hero-logo {
-  width: 160px !important;
-  max-width: 160px !important;
+.intro-hero .hero-logo,
+.intro-container .hero-logo {
+  width: 180px !important;
+  max-width: 180px !important;
   height: auto !important;
   margin-bottom: 2rem;
+  opacity: 1;
 }
 
 /* Hero Title */
 .intro-title {
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 4rem !important;
+  font-weight: 800 !important;
   margin-bottom: 0rem !important;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  margin-top: 2rem !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em !important;
   color: #FFFFFF !important;
+  background: none !important;
+  -webkit-text-fill-color: #FFFFFF !important;
 }
 
 /* Hero Subtitle */
 .intro-subtitle {
-  font-size: 1.375rem;
+  font-size: 1.375rem !important;
   margin-bottom: 0rem !important;
   margin-top: 1rem !important;
-  line-height: 1.6;
-  font-weight: 400;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: #FFFFFF !important;
+  opacity: 0.9;
 }
 
 /* Hero Cards Container */
@@ -121,10 +116,11 @@ body:has(.intro-hero) #content-container {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
-/* Hero Cards - Glass Effect */
-.intro-cards .card {
+/* Hero Cards - Premium Glass Effect */
+.intro-card {
   background: rgba(255, 255, 255, 0.03) !important;
   border: 1px solid rgba(255, 255, 255, 0.06) !important;
   border-radius: 24px !important;
@@ -136,20 +132,73 @@ body:has(.intro-hero) #content-container {
   -webkit-backdrop-filter: blur(10px);
   text-align: left;
   min-height: 160px;
+  display: block;
+  text-decoration: none !important;
   box-shadow: 
     0 12px 48px rgba(0, 0, 0, 0.2),
     0 4px 24px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
 
-.intro-cards .card:hover {
-  transform: translateY(-8px) scale(1.02);
+.intro-card:hover {
+  transform: translateY(-12px) scale(1.03);
   border-color: rgba(255, 255, 255, 0.12) !important;
   background: rgba(255, 255, 255, 0.05) !important;
   box-shadow: 
     0 20px 80px rgba(0, 0, 0, 0.3),
     0 8px 40px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Card Top Highlight */
+.intro-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  opacity: 0.8;
+  border-radius: 24px 24px 0 0;
+}
+
+/* Card Icon */
+.intro-card-icon {
+  width: 48px !important;
+  height: 48px !important;
+  margin-bottom: 1rem !important;
+  opacity: 0.8;
+  display: block;
+  object-fit: contain;
+}
+
+/* Card Text */
+.intro-card h3 {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.75rem !important;
+  color: #FFFFFF !important;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.intro-card p {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+  color: #FFFFFF !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  opacity: 0.85;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Mobile responsive */
@@ -159,10 +208,11 @@ body:has(.intro-hero) #content-container {
   }
   
   .intro-title {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
   }
   
-  .intro-hero .hero-logo {
+  .intro-hero .hero-logo,
+  .intro-container .hero-logo {
     width: 120px !important;
     max-width: 120px !important;
   }
@@ -170,6 +220,11 @@ body:has(.intro-hero) #content-container {
 
 /* Hide default page elements on hero page */
 body:has(.intro-hero) #page-title,
-body:has(.intro-hero) .eyebrow {
+body:has(.intro-hero) .eyebrow,
+body:has(.intro-hero) #header {
   display: none !important;
+}
+
+body:has(.intro-hero) #content {
+  margin-top: 0 !important;
 }

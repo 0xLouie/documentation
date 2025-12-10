@@ -7,10 +7,10 @@ description: "The World's First Social Prediction Network"
 <img src="/background.jpg" alt="" className="hero-background" />
 <div className="hero-overlay" />
 
-<div className="intro-container">
-  <div className="intro-hero">
+<div className="intro-hero">
+  <div className="intro-container">
     <img
-      src="/logo/dark.svg"
+      src="/logo.png"
       alt="Versus"
       className="hero-logo"
     />
@@ -18,18 +18,26 @@ description: "The World's First Social Prediction Network"
     <p className="intro-subtitle">The World's First Social Prediction Network</p>
 
     <div className="intro-cards">
-      <Card title="What is Versus?" icon="bullseye-arrow" href="/about/why-prediction-markets">
-        Prediction as social competition, not isolated wagering
-      </Card>
-      <Card title="The Terminal" icon="bolt" href="/using/prediction-markets">
-        Find markets, challenge friends, climb the leaderboards
-      </Card>
-      <Card title="Competitive Social Prediction" icon="trophy" href="/about/philosophy">
-        1v1 matches, leaderboards, rankings, achievements, seasons
-      </Card>
-      <Card title="Get Started" icon="rocket" href="/getting-started/create-account">
-        Create your account and join the beta
-      </Card>
+      <a href="/about/why-prediction-markets" className="intro-card">
+        <img src="/logo.png" alt="" className="intro-card-icon" />
+        <h3>What is Versus?</h3>
+        <p>Prediction as social competition, not isolated wagering</p>
+      </a>
+      <a href="/using/prediction-markets" className="intro-card">
+        <img src="/logo.png" alt="" className="intro-card-icon" />
+        <h3>The Terminal</h3>
+        <p>Find markets, challenge friends, climb the leaderboards</p>
+      </a>
+      <a href="/about/philosophy" className="intro-card">
+        <img src="/logo.png" alt="" className="intro-card-icon" />
+        <h3>Competitive Social Prediction</h3>
+        <p>1v1 matches, leaderboards, rankings, achievements, seasons</p>
+      </a>
+      <a href="/getting-started/create-account" className="intro-card">
+        <img src="/logo.png" alt="" className="intro-card-icon" />
+        <h3>Get Started</h3>
+        <p>Create your account and join the beta</p>
+      </a>
     </div>
   </div>
 </div>
