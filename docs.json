@@ -3,9 +3,12 @@
   "theme": "maple",
   "name": "Versus",
   "colors": {
-    "primary": "#E8A598",
-    "light": "#F5C4BB",
-    "dark": "#D4867A"
+    "primary": "#FFB8AA",
+    "light": "#FFB8AA",
+    "dark": "#7E4C41",
+    "background": {
+      "dark": "#0D1721"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
