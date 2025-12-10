@@ -242,11 +242,10 @@ body:has(.intro-hero) #content {
   display: block;
 }
 
-/* Card Text - Baskerville for headings, Helvetica Neue for body */
+/* Card Text */
 .intro-card h3 {
-  font-family: 'Baskerville', 'Libre Baskerville', 'Georgia', serif !important;
   font-size: 1.25rem !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   margin-top: 0 !important;
   margin-bottom: 0.75rem !important;
   color: #FFFFFF !important;
@@ -255,7 +254,6 @@ body:has(.intro-hero) #content {
 }
 
 .intro-card p {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
   font-size: 0.9rem !important;
   line-height: 1.6 !important;
   color: #FFFFFF !important;
