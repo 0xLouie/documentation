@@ -144,22 +144,24 @@ body:has(.intro-hero) #content {
   display: block;
 }
 
-/* Hero Title */
+/* Hero Title - Baskerville for headings */
 .intro-title {
+  font-family: 'Baskerville', 'Libre Baskerville', 'Georgia', serif !important;
   font-size: 4rem !important;
-  font-weight: 800 !important;
+  font-weight: 400 !important;
   margin-bottom: 0rem !important;
   margin-top: 0 !important;
   line-height: 1.1 !important;
-  letter-spacing: -0.02em !important;
+  letter-spacing: -0.01em !important;
   color: #FFFFFF !important;
   background: none !important;
   -webkit-text-fill-color: #FFFFFF !important;
   text-align: center;
 }
 
-/* Hero Subtitle */
+/* Hero Subtitle - Helvetica Neue for body */
 .intro-subtitle {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
   font-size: 1.375rem !important;
   margin-bottom: 0rem !important;
   margin-top: 1rem !important;
@@ -240,18 +242,20 @@ body:has(.intro-hero) #content {
   display: block;
 }
 
-/* Card Text */
+/* Card Text - Baskerville for headings, Helvetica Neue for body */
 .intro-card h3 {
+  font-family: 'Baskerville', 'Libre Baskerville', 'Georgia', serif !important;
   font-size: 1.25rem !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   margin-top: 0 !important;
   margin-bottom: 0.75rem !important;
-  color: var(--versus-accent) !important;
-  letter-spacing: 0.02em;
+  color: #FFFFFF !important;
+  letter-spacing: 0.01em;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .intro-card p {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
   font-size: 0.9rem !important;
   line-height: 1.6 !important;
   color: #FFFFFF !important;
