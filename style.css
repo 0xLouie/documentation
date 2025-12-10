@@ -72,11 +72,19 @@
   }
 }
 
+/* Content container adjustments for hero page */
+body:has(.intro-hero) #content-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: none !important;
+  overflow-x: hidden !important;
+}
+
 /* Main Hero Section */
 .intro-hero {
   text-align: center;
   padding: 0rem 2rem;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -87,8 +95,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 100px);
   padding: 2rem 0;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Hero Logo */
@@ -130,16 +140,24 @@
   opacity: 0.95;
 }
 
-/* Hero Cards Container */
+/* Hero Cards Container - Wide layout like Edel */
 .intro-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 3rem;
-  max-width: 800px;
-  width: 100%;
+  width: 90%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Desktop: Make cards wider */
+@media (min-width: 1024px) {
+  .intro-cards {
+    width: calc(100vw - 450px);
+    max-width: 1000px;
+  }
 }
 
 /* Hero Cards - Premium Glass Effect */
@@ -193,14 +211,12 @@
   border-radius: 24px 24px 0 0;
 }
 
-/* Card Icon */
+/* Card Icon (Emoji) */
 .intro-card-icon {
-  width: 48px !important;
-  height: 48px !important;
+  font-size: 2.5rem;
+  line-height: 1;
   margin-bottom: 1rem !important;
-  opacity: 0.8;
   display: block;
-  object-fit: contain;
 }
 
 /* Card Text - Using brand typography */
@@ -226,12 +242,23 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
+/* Tablet responsive */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .intro-cards {
+    width: 85%;
+    max-width: 700px;
+  }
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .intro-cards {
     grid-template-columns: 1fr;
+    width: calc(100% - 2rem);
     max-width: 100%;
-    padding: 0 1rem;
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   
   .intro-title {
@@ -242,6 +269,10 @@
   .intro-container .hero-logo {
     width: 120px !important;
     max-width: 120px !important;
+  }
+  
+  .intro-container {
+    padding: 1rem;
   }
 }
 
