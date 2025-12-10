@@ -1,0 +1,71 @@
+/* Landing page full-width background */
+.landing-hero {
+  position: relative;
+  margin: -24px -24px 0 -24px;
+  padding: 80px 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.landing-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.landing-hero h1 {
+  color: white !important;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.landing-hero .tagline {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.landing-hero .logo {
+  height: 7rem;
+  margin-bottom: 2rem;
+}
+
+.landing-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 56rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .landing-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .landing-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Hide default page elements on landing */
+[data-page="index"] #page-title,
+[data-page="index"] .eyebrow {
+  display: none;
+}
+
