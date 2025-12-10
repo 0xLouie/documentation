@@ -107,7 +107,7 @@
   opacity: 0.9;
 }
 
-/* Hero Cards Container */
+/* Hero Cards Container - Break out for full width utilization */
 .intro-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -116,7 +116,11 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  /* Break out of the hero's width constraint on desktop */
+  width: calc(100vw - 500px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Hero Cards - Premium Glass Effect */
@@ -205,6 +209,10 @@
 @media (max-width: 768px) {
   .intro-cards {
     grid-template-columns: 1fr;
+    width: calc(100vw - 2rem);
+    left: 0;
+    transform: none;
+    max-width: 100%;
   }
   
   .intro-title {
@@ -215,6 +223,13 @@
   .intro-container .hero-logo {
     width: 120px !important;
     max-width: 120px !important;
+  }
+}
+
+/* Tablet responsive */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .intro-cards {
+    width: calc(100vw - 4rem);
   }
 }
 
