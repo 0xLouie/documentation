@@ -131,7 +131,7 @@
     "default": "dark"
   },
   "search": {
-    "prompt": "Search Versus docs..."
+    "prompt": "Search Versus documentation..."
   },
   "feedback": {
     "thumbsRating": true,
