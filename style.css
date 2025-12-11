@@ -144,11 +144,10 @@ body:has(.intro-hero) #content {
   display: block;
 }
 
-/* Hero Title - Baskerville for headings */
+/* Hero Title */
 .intro-title {
-  font-family: 'Baskerville', 'Libre Baskerville', 'Georgia', serif !important;
   font-size: 4rem !important;
-  font-weight: 400 !important;
+  font-weight: 700 !important;
   margin-bottom: 0rem !important;
   margin-top: 0 !important;
   line-height: 1.1 !important;
