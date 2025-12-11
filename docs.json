@@ -8,18 +8,6 @@
     "dark": "#7E4C41"
   },
   "favicon": "/favicon.svg",
-  "metadata": {
-    "og:site_name": "Versus",
-    "og:title": "Versus Documentation",
-    "og:description": "The World's First Social Prediction Network",
-    "og:image": "/background.jpg",
-    "twitter:card": "summary_large_image",
-    "twitter:site": "@versusmarkets",
-    "twitter:title": "Versus Documentation",
-    "twitter:description": "The World's First Social Prediction Network",
-    "twitter:image": "/background.jpg",
-    "theme-color": "#FFFFFF"
-  },
   "appearance": {
     "default": "dark",
     "strict": true
@@ -131,7 +119,7 @@
     "default": "dark"
   },
   "search": {
-    "prompt": "Search Versus documentation..."
+    "prompt": "Search Versus docs..."
   },
   "feedback": {
     "thumbsRating": true,
