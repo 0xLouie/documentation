@@ -2,6 +2,17 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "Versus",
+  "metadata": {
+    "og:site_name": "Versus",
+    "og:title": "Versus - The World's First Social Prediction Network",
+    "og:description": "Compete with friends on real-world predictions. Track your performance, climb leaderboards, and prove you know best.",
+    "og:image": "https://versus.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DGETTING%2BSTARTED%26appearance%3Ddark%26title%3DMeet%2BVersus%26description%3DThe%2BWorld%2527s%2BFirst%2BSocial%2BPrediction%2BNetwork%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fversus%252F_PCDM7S73Vq3yhdQ%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253D_PCDM7S73Vq3yhdQ%2526q%253D85%2526s%253Da3e203172dca01cb4dccf78c32a03a7d%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fversus%252F_PCDM7S73Vq3yhdQ%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253D_PCDM7S73Vq3yhdQ%2526q%253D85%2526s%253Dec3e23c23803fa53eb3d59289a695774%26primaryColor%3D%2523FFB8AA%26lightColor%3D%2523FFB8AA%26darkColor%3D%25237E4C41%26backgroundLight%3D%2523ffffff%26backgroundDark%3D%25230e0d0e&w=1200&q=100",
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@versusmarkets",
+    "twitter:title": "Versus - The World's First Social Prediction Network",
+    "twitter:description": "Compete with friends on real-world predictions. Track your performance, climb leaderboards, and prove you know best.",
+    "twitter:image": "https://versus.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DGETTING%2BSTARTED%26appearance%3Ddark%26title%3DMeet%2BVersus%26description%3DThe%2BWorld%2527s%2BFirst%2BSocial%2BPrediction%2BNetwork%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fversus%252F_PCDM7S73Vq3yhdQ%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253D_PCDM7S73Vq3yhdQ%2526q%253D85%2526s%253Da3e203172dca01cb4dccf78c32a03a7d%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fversus%252F_PCDM7S73Vq3yhdQ%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253D_PCDM7S73Vq3yhdQ%2526q%253D85%2526s%253Dec3e23c23803fa53eb3d59289a695774%26primaryColor%3D%2523FFB8AA%26lightColor%3D%2523FFB8AA%26darkColor%3D%25237E4C41%26backgroundLight%3D%2523ffffff%26backgroundDark%3D%25230e0d0e&w=1200&q=100"
+  },
   "colors": {
     "primary": "#FFB8AA",
     "light": "#FFB8AA",
