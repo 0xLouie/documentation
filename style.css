@@ -164,6 +164,8 @@ body:has(.intro-hero) #content {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   max-width: 800px;
 }
@@ -277,10 +279,7 @@ body:has(.intro-hero) #content {
 /* Hide default page elements on hero page */
 body:has(.intro-hero) #page-title,
 body:has(.intro-hero) .eyebrow,
-body:has(.intro-hero) #header,
-body:has(.intro-hero) aside,
-body:has(.intro-hero) [class*="TableOfContents"],
-body:has(.intro-hero) [class*="toc"] {
+body:has(.intro-hero) #header {
   display: none !important;
 }
 
