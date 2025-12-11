@@ -277,7 +277,10 @@ body:has(.intro-hero) #content {
 /* Hide default page elements on hero page */
 body:has(.intro-hero) #page-title,
 body:has(.intro-hero) .eyebrow,
-body:has(.intro-hero) #header {
+body:has(.intro-hero) #header,
+body:has(.intro-hero) aside,
+body:has(.intro-hero) [class*="TableOfContents"],
+body:has(.intro-hero) [class*="toc"] {
   display: none !important;
 }
 
