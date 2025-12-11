@@ -75,17 +75,23 @@
 /* Content container adjustments for hero page */
 body:has(.intro-hero) #content-container {
   overflow-x: hidden !important;
+  max-width: none !important;
 }
 
 body:has(.intro-hero) #content-area {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: flex-start !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 body:has(.intro-hero) #content {
-  display: flex !important;
-  justify-content: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+body:has(.intro-hero) article {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 /* Main Hero Section */
