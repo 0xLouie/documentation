@@ -74,24 +74,18 @@
 
 /* Content container adjustments for hero page */
 body:has(.intro-hero) #content-container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  max-width: none !important;
   overflow-x: hidden !important;
-  width: 100% !important;
 }
 
 body:has(.intro-hero) #content-area {
-  max-width: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-  /* Expand to full width since we hide the right nav */
-  grid-column: 1 / -1 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
 }
 
 body:has(.intro-hero) #content {
-  max-width: none !important;
-  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 /* Main Hero Section */
@@ -282,16 +276,6 @@ body:has(.intro-hero) #content {
 body:has(.intro-hero) #page-title,
 body:has(.intro-hero) .eyebrow,
 body:has(.intro-hero) #header {
-  display: none !important;
-}
-
-/* Hide "On this page" right navigation on hero page */
-body:has(.intro-hero) #table-of-contents,
-body:has(.intro-hero) aside[class*="table-of-contents"],
-body:has(.intro-hero) nav[aria-label="Table of contents"],
-body:has(.intro-hero) .toc,
-body:has(.intro-hero) [class*="TableOfContents"],
-body:has(.intro-hero) [class*="toc-"] {
   display: none !important;
 }
 
