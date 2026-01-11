@@ -307,3 +307,55 @@ body:has(.intro-hero) {
 html:has(.intro-hero) {
   overflow-x: hidden !important;
 }
+
+/* ===================================================================
+   TEAM SECTION STYLES
+   =================================================================== */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member h3 {
+  font-size: 1.1rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.team-member ul {
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.team-photo {
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  margin: 0 auto !important;
+  display: block !important;
+  border: 3px solid var(--versus-accent) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 4px rgba(255, 184, 170, 0.1) !important;
+}
