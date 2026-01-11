@@ -36,6 +36,7 @@
       {
         "group": "ABOUT VERSUS",
         "pages": [
+          "about/who-is-versus",
           "about/why-prediction-markets",
           "about/philosophy",
           "about/market-opportunity",
